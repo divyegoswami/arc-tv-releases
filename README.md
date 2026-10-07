@@ -1,10 +1,16 @@
 # Arc TV downloads
 
-Builds and update feeds for **Arc TV** on Android and iPhone/iPad. The app itself lives in a private repository; this
+Builds and update feeds for **Arc TV** on Mac, Android and iPhone/iPad. The app itself lives in a private repository; this
 one only holds what the apps need to update themselves.
 
 Arc TV is a free player for the live TV, movies and series from your own IPTV provider. It does not include any channels
 or playlists.
+
+## Mac
+
+Download the `.dmg` for your Mac from [Releases](../../releases) (`arm64` for Apple silicon, `x64` for Intel), open it and
+drag **Arc TV** to Applications. The app isn't notarized by Apple, so if macOS says it is damaged, right-click it and
+choose **Open**. After that it updates itself: **Settings → About**.
 
 ## Android
 
@@ -30,6 +36,7 @@ The app is unsigned; [SideStore](https://sidestore.io) signs it with your own Ap
 | --- | --- |
 | `source.json` | SideStore / AltStore: the list of iOS builds |
 | `android.json` | The Android app's "Check for updates" |
+| `desktop.json` | The Mac app's updater |
 | `icon.png` | The app icon shown in SideStore |
 | Releases | The `.apk` and `.ipa` files, each with its SHA-256 |
 
