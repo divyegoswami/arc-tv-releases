@@ -1,0 +1,45 @@
+{
+  "name": "Arc TV",
+  "identifier": "io.github.divyegoswami.arc-tv.source",
+  "sourceURL": "https://raw.githubusercontent.com/divyegoswami/arc-tv-releases/main/source.json",
+  "subtitle": "Your IPTV, beautifully organised",
+  "description": "Arc TV is a free player for the live TV, movies and series from your own IPTV provider. It does not include any channels or playlists.",
+  "iconURL": "https://raw.githubusercontent.com/divyegoswami/arc-tv-releases/main/icon.png",
+  "website": "https://github.com/divyegoswami/arc-tv-releases",
+  "tintColor": "#6E5CE6",
+  "apps": [
+    {
+      "name": "Arc TV",
+      "bundleIdentifier": "com.iptvnator.arc",
+      "developerName": "Divye Goswami",
+      "subtitle": "Your IPTV, beautifully organised",
+      "localizedDescription": "Watch live TV, movies and series from your own Stalker portal, with an Apple TV look: resume points, offline downloads, AirPlay, and backup import and export.",
+      "iconURL": "https://raw.githubusercontent.com/divyegoswami/arc-tv-releases/main/icon.png",
+      "tintColor": "#6E5CE6",
+      "category": "entertainment",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.2.29",
+          "buildVersion": "37",
+          "date": "2026-10-07",
+          "localizedDescription": "**Arc TV for iPhone and iPad** 0.2.29 (early access). Requires iOS 18 or newer.\n\n**What's new:** Arc TV now tells you when a new version is out (**Settings → Updates**) and opens SideStore to install it,\nwith a one-tap **Add Arc TV to SideStore**. Also in this build: portal export, per-season downloads, live channels in\nSearch, and a Series tab with its own categories.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.29/arc-tv-ios-0.2.29.ipa",
+          "size": 2050585,
+          "sha256": "ba5ce9d9d332290a2ddc1c7c1ccdab84abd6c77881e8ac396d9e01ea1bf0868f",
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.2.29",
+      "versionDate": "2026-10-07",
+      "versionDescription": "**Arc TV for iPhone and iPad** 0.2.29 (early access). Requires iOS 18 or newer.\n\n**What's new:** Arc TV now tells you when a new version is out (**Settings → Updates**) and opens SideStore to install it,\nwith a one-tap **Add Arc TV to SideStore**. Also in this build: portal export, per-season downloads, live channels in\nSearch, and a Series tab with its own categories.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.29/arc-tv-ios-0.2.29.ipa",
+      "size": 2050585
+    }
+  ],
+  "news": []
+}
