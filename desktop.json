@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.0.1",
+    "version": "1.1.0",
     "date": "2026-10-07",
-    "notes": "**Arc TV for Mac** 1.0.1 — Apple silicon (M1 and newer) and Intel.\n\n**What's new:** Arc TV for Mac can now update itself. Open **Settings → About**, choose **Download**, then **Restart to\nupdate**. Arc TV swaps itself for the new version and opens again, your playlists and settings are kept, and the old\nversion is put back automatically if anything goes wrong.\n\nArc TV has to be in your **Applications** folder to update itself.",
+    "notes": "Arc TV for desktop now supports Stalker portals only. Xtream Codes and M3U playlists have been removed (existing sources stay in your data but are hidden), along with Windows builds. Fixes: series listed in a portal's movie section now appear under Series, and Continue watching on Home keeps every title you have started.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.0.1/arc-tv-1.0.1-mac-arm64.zip",
-        "sha256": "651ddb10a0d46cba6f20d1d199b2585f8c6e5447a4c8b932c1a5587837df6931",
-        "size": 165121562
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.0.1/arc-tv-1.0.1-mac-x64.zip",
-        "sha256": "f7e68e59cac11ed39548d83b9171c5ac690934e0be96efd73a8963efe0fb58b2",
-        "size": 167247801
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.0/arc-tv-1.1.0-mac-arm64.zip",
+        "sha256": "51c97f7de1d12b38273ff2706057113ff2e340add00f4858a76664f59b471180",
+        "size": 164789015
       }
     }
   },
   "versions": [
+    {
+      "version": "1.1.0",
+      "date": "2026-10-07",
+      "notes": "Arc TV for desktop now supports Stalker portals only. Xtream Codes and M3U playlists have been removed (existing sources stay in your data but are hidden), along with Windows builds. Fixes: series listed in a portal's movie section now appear under Series, and Continue watching on Home keeps every title you have started.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.0/arc-tv-1.1.0-mac-arm64.zip",
+          "sha256": "51c97f7de1d12b38273ff2706057113ff2e340add00f4858a76664f59b471180",
+          "size": 164789015
+        }
+      }
+    },
     {
       "version": "1.0.1",
       "date": "2026-10-07",
