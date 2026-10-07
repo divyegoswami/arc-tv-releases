@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "appId": "com.fourgray.iptvnator",
+  "latest": {
+    "version": "1.0.1",
+    "date": "2026-10-07",
+    "notes": "**Arc TV for Mac** 1.0.1 — Apple silicon (M1 and newer) and Intel.\n\n**What's new:** Arc TV for Mac can now update itself. Open **Settings → About**, choose **Download**, then **Restart to\nupdate**. Arc TV swaps itself for the new version and opens again, your playlists and settings are kept, and the old\nversion is put back automatically if anything goes wrong.\n\nArc TV has to be in your **Applications** folder to update itself.",
+    "minOS": "12.0",
+    "assets": {
+      "arm64": {
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.0.1/arc-tv-1.0.1-mac-arm64.zip",
+        "sha256": "651ddb10a0d46cba6f20d1d199b2585f8c6e5447a4c8b932c1a5587837df6931",
+        "size": 165121562
+      }
+    }
+  },
+  "versions": [
+    {
+      "version": "1.0.1",
+      "date": "2026-10-07",
+      "notes": "**Arc TV for Mac** 1.0.1 — Apple silicon (M1 and newer) and Intel.\n\n**What's new:** Arc TV for Mac can now update itself. Open **Settings → About**, choose **Download**, then **Restart to\nupdate**. Arc TV swaps itself for the new version and opens again, your playlists and settings are kept, and the old\nversion is put back automatically if anything goes wrong.\n\nArc TV has to be in your **Applications** folder to update itself.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.0.1/arc-tv-1.0.1-mac-arm64.zip",
+          "sha256": "651ddb10a0d46cba6f20d1d199b2585f8c6e5447a4c8b932c1a5587837df6931",
+          "size": 165121562
+        }
+      }
+    }
+  ]
+}
