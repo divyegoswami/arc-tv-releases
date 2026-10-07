@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "packageName": "com.iptvnator.arc",
+  "latest": {
+    "versionName": "0.1.8",
+    "versionCode": 9,
+    "date": "2026-10-07",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.8/arc-tv-android-0.1.8.apk",
+    "sha256": "96c4a12948106933b077588c4dda4f99e6f4c5a1c2cf390be1a03e8fc27b5139",
+    "size": 18502672,
+    "minSdk": 26,
+    "notes": "**Arc TV for Android** 0.1.8 (early access). Phones and tablets, Android 8.0 or newer.\n\n**What's new:** the app can now update itself. Open **Settings → Updates** to check, download and install new versions, and\nArc TV looks for updates when it opens (you can turn that off). Also in this build: the floating glass tab bar, portal\nexport, Miracast, per-season downloads, live channels in Search, and a Series tab with its own categories."
+  },
+  "versions": [
+    {
+      "versionName": "0.1.8",
+      "versionCode": 9,
+      "date": "2026-10-07",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.8/arc-tv-android-0.1.8.apk",
+      "sha256": "96c4a12948106933b077588c4dda4f99e6f4c5a1c2cf390be1a03e8fc27b5139",
+      "size": 18502672,
+      "minSdk": 26,
+      "notes": "**Arc TV for Android** 0.1.8 (early access). Phones and tablets, Android 8.0 or newer.\n\n**What's new:** the app can now update itself. Open **Settings → Updates** to check, download and install new versions, and\nArc TV looks for updates when it opens (you can turn that off). Also in this build: the floating glass tab bar, portal\nexport, Miracast, per-season downloads, live channels in Search, and a Series tab with its own categories."
+    }
+  ]
+}
