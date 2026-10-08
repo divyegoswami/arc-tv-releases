@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "date": "2026-10-08",
-    "notes": "Fixes: series that your portal lists inside its movie section now open with their seasons and episodes from the Series section, and category lists no longer show a meaningless dash pill. Also includes 1.1.0: Stalker-only app (Xtream and M3U removed) and no more Windows builds.",
+    "notes": "Fix: opening a show from Continue watching now loads its seasons and episodes (shows your portal lists inside its movie section). Includes 1.1.1 and 1.1.0 changes: Stalker-only app, no Windows builds.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.1/arc-tv-1.1.1-mac-arm64.zip",
-        "sha256": "0ba380f1ed5b57120b5a4583260af83364823677fcac40473c504bd6d595b501",
-        "size": 164789423
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.1/arc-tv-1.1.1-mac-x64.zip",
-        "sha256": "63e8d4ed9d8de3f957ebd0ef16b78e5c9f95ad18d593f0cded59af59038543b6",
-        "size": 166915662
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-arm64.zip",
+        "sha256": "8263e50916dd7ccc4384615d8e88b80ff6f21163458c123eebba31015468e386",
+        "size": 164786896
       }
     }
   },
   "versions": [
+    {
+      "version": "1.1.2",
+      "date": "2026-10-08",
+      "notes": "Fix: opening a show from Continue watching now loads its seasons and episodes (shows your portal lists inside its movie section). Includes 1.1.1 and 1.1.0 changes: Stalker-only app, no Windows builds.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-arm64.zip",
+          "sha256": "8263e50916dd7ccc4384615d8e88b80ff6f21163458c123eebba31015468e386",
+          "size": 164786896
+        }
+      }
+    },
     {
       "version": "1.1.1",
       "date": "2026-10-08",
