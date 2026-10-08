@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.1.2",
+    "version": "1.1.3",
     "date": "2026-10-08",
-    "notes": "Fix: opening a show from Continue watching now loads its seasons and episodes (shows your portal lists inside its movie section). Includes 1.1.1 and 1.1.0 changes: Stalker-only app, no Windows builds.",
+    "notes": "Fix: movies opened from Continue watching on Home now play (Arc TV looks up the movie's playback details on your portal). Includes 1.1.2 and 1.1.1 fixes for series episodes, and 1.1.0: Stalker-only app, no Windows builds.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-arm64.zip",
-        "sha256": "8263e50916dd7ccc4384615d8e88b80ff6f21163458c123eebba31015468e386",
-        "size": 164786896
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-x64.zip",
-        "sha256": "1b1da241bce3f7094018b42c8498dc86a508fa5d69a57a25b652f24bd54d1639",
-        "size": 166913135
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.3/arc-tv-1.1.3-mac-arm64.zip",
+        "sha256": "7cc51b7205444f51d1c00defeae0d3911e9716f9cdcf9b8ec54e1e94b9f93f75",
+        "size": 164788686
       }
     }
   },
   "versions": [
+    {
+      "version": "1.1.3",
+      "date": "2026-10-08",
+      "notes": "Fix: movies opened from Continue watching on Home now play (Arc TV looks up the movie's playback details on your portal). Includes 1.1.2 and 1.1.1 fixes for series episodes, and 1.1.0: Stalker-only app, no Windows builds.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.3/arc-tv-1.1.3-mac-arm64.zip",
+          "sha256": "7cc51b7205444f51d1c00defeae0d3911e9716f9cdcf9b8ec54e1e94b9f93f75",
+          "size": 164788686
+        }
+      }
+    },
     {
       "version": "1.1.2",
       "date": "2026-10-08",
