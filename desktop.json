@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "date": "2026-10-08",
-    "notes": "The phone remote is redesigned in Arc TV's glass look and now controls the whole app. Move around and open titles with a round click-pad, play, pause and seek movies and shows (10 seconds back or forward), change volume and episodes, and search with your phone's keyboard. Scan the QR code in Settings → Remote control once to pair; old bookmarked links need a rescan.",
+    "notes": "Phone remote polish: the D-pad and Back are no longer stuck while a notification is showing, the first arrow press starts in the main content, the seek bar stays where you drop it, play/pause shows Buffering while the video is loading, and typed text with accents or emoji arrives intact.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.0/arc-tv-1.2.0-mac-arm64.zip",
-        "sha256": "69bf90683b30ffa535c9a58b63bcb830c518f050515199b59603ceb3aad3e38b",
-        "size": 164807804
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.0/arc-tv-1.2.0-mac-x64.zip",
-        "sha256": "036f94ed3c02929278e11e073cb3fa1455571b2ca6d69c5fe0ba18230462a7f7",
-        "size": 166934043
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.1/arc-tv-1.2.1-mac-arm64.zip",
+        "sha256": "accfcf4b63436847216e13a4012d4db4655023554e1b78fbd97a9caa3426bb5e",
+        "size": 164806194
       }
     }
   },
   "versions": [
+    {
+      "version": "1.2.1",
+      "date": "2026-10-08",
+      "notes": "Phone remote polish: the D-pad and Back are no longer stuck while a notification is showing, the first arrow press starts in the main content, the seek bar stays where you drop it, play/pause shows Buffering while the video is loading, and typed text with accents or emoji arrives intact.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.1/arc-tv-1.2.1-mac-arm64.zip",
+          "sha256": "accfcf4b63436847216e13a4012d4db4655023554e1b78fbd97a9caa3426bb5e",
+          "size": 164806194
+        }
+      }
+    },
     {
       "version": "1.2.0",
       "date": "2026-10-08",
