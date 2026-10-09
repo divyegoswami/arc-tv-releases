@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.4.0",
+    "version": "1.4.1",
     "date": "2026-10-09",
-    "notes": "## What's new\n\n- **One player, built in.** MPV, VLC and the experimental Embedded MPV player are gone. Live TV, movies and series now play in the built-in player (HTML5, Video.js or Art Player). If you had chosen an external player, Arc TV switches you to the default built-in one automatically.\n- **Subtitles the Apple TV way.** Clean white text with a soft shadow and no box behind it, in the system font.\n- **Live recording is removed**, together with its settings and the record button. Files you already recorded stay on disk, untouched.\n- **Smaller download.** Installers no longer bundle the libmpv/FFmpeg runtime.",
+    "notes": "## What's new\n\n- **Subtitles on frosted glass.** Captions sit on one slightly see-through dark panel with clean white text and no outline, and scale with the player. The subtitle colour choice is gone, so captions always read the same.\n- **Phone remote: Full screen, Subtitles and Audio.** While a video plays, the phone has a Full screen button and Subtitles and Audio buttons that show the current choice and step to the next one.\n- **Episode Play button** is a dark frosted disc instead of a white blob in dark mode.\n- **Smarter lists and settings.** Recent searches keep only what you opened. Empty Radio says \"stations\". Downloads no longer calls paused items \"Downloading now\" or shows a \"0 B\" total. Live TV initials skip tags like 4K. Settings drops the stale \"recording\" wording, shows the phone pairing QR straight away and says \"latest version\" once.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-arm64.zip",
-        "sha256": "8733de2c56cc4aeb82a13498c50b8d8f1f872d5ec21a9465959ec819961699b9",
-        "size": 164652214
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-x64.zip",
-        "sha256": "862279348161c67ca79206710227d8ab2a90e530d1080248d148c6962d6ab41e",
-        "size": 166778453
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-arm64.zip",
+        "sha256": "1f6feeab93e1f35e621b383e093858ece7cde16dd4f2a63cbb63da68810f1791",
+        "size": 164653675
       }
     }
   },
   "versions": [
+    {
+      "version": "1.4.1",
+      "date": "2026-10-09",
+      "notes": "## What's new\n\n- **Subtitles on frosted glass.** Captions sit on one slightly see-through dark panel with clean white text and no outline, and scale with the player. The subtitle colour choice is gone, so captions always read the same.\n- **Phone remote: Full screen, Subtitles and Audio.** While a video plays, the phone has a Full screen button and Subtitles and Audio buttons that show the current choice and step to the next one.\n- **Episode Play button** is a dark frosted disc instead of a white blob in dark mode.\n- **Smarter lists and settings.** Recent searches keep only what you opened. Empty Radio says \"stations\". Downloads no longer calls paused items \"Downloading now\" or shows a \"0 B\" total. Live TV initials skip tags like 4K. Settings drops the stale \"recording\" wording, shows the phone pairing QR straight away and says \"latest version\" once.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-arm64.zip",
+          "sha256": "1f6feeab93e1f35e621b383e093858ece7cde16dd4f2a63cbb63da68810f1791",
+          "size": 164653675
+        }
+      }
+    },
     {
       "version": "1.4.0",
       "date": "2026-10-09",
