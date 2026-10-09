@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.2.2",
+    "version": "1.3.0",
     "date": "2026-10-09",
-    "notes": "The phone remote now works from your home screen. Add it to the home screen after pairing and the icon opens already paired, instead of asking for the QR code again. After Reset pairing, open the new QR link once and add the icon again.",
+    "notes": "Safer, calmer and roomier. Episodes have one big Play button and a ⋯ menu for Mark watched, Download and details; season downloads ask first and single downloads can be undone. Series and movie pages use the full width, the player header is cleaner, lists say Loading instead of 0 items, and Live TV channels without a logo show their initials. The phone remote shows what is selected, asks for a second OK on risky buttons, and has new Play and Episodes shortcuts.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.2/arc-tv-1.2.2-mac-arm64.zip",
-        "sha256": "e5065224ac5e1ec3f54b6670280fad33f65d78625e5f1f5d3df4f308b2654f2b",
-        "size": 164848029
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.2/arc-tv-1.2.2-mac-x64.zip",
-        "sha256": "205fde25c4d873d74cd6951358c9daf887d1e7e24643d435d070262c3b061c30",
-        "size": 166974268
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-arm64.zip",
+        "sha256": "9f4f50c1bd7e53f07b134bab1ae19d8cc694ca3882b1f5a36af426a009388e55",
+        "size": 164864162
       }
     }
   },
   "versions": [
+    {
+      "version": "1.3.0",
+      "date": "2026-10-09",
+      "notes": "Safer, calmer and roomier. Episodes have one big Play button and a ⋯ menu for Mark watched, Download and details; season downloads ask first and single downloads can be undone. Series and movie pages use the full width, the player header is cleaner, lists say Loading instead of 0 items, and Live TV channels without a logo show their initials. The phone remote shows what is selected, asks for a second OK on risky buttons, and has new Play and Episodes shortcuts.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-arm64.zip",
+          "sha256": "9f4f50c1bd7e53f07b134bab1ae19d8cc694ca3882b1f5a36af426a009388e55",
+          "size": 164864162
+        }
+      }
+    },
     {
       "version": "1.2.2",
       "date": "2026-10-09",
