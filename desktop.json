@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.3.0",
+    "version": "1.4.0",
     "date": "2026-10-09",
-    "notes": "Safer, calmer and roomier. Episodes have one big Play button and a ⋯ menu for Mark watched, Download and details; season downloads ask first and single downloads can be undone. Series and movie pages use the full width, the player header is cleaner, lists say Loading instead of 0 items, and Live TV channels without a logo show their initials. The phone remote shows what is selected, asks for a second OK on risky buttons, and has new Play and Episodes shortcuts.",
+    "notes": "## What's new\n\n- **One player, built in.** MPV, VLC and the experimental Embedded MPV player are gone. Live TV, movies and series now play in the built-in player (HTML5, Video.js or Art Player). If you had chosen an external player, Arc TV switches you to the default built-in one automatically.\n- **Subtitles the Apple TV way.** Clean white text with a soft shadow and no box behind it, in the system font.\n- **Live recording is removed**, together with its settings and the record button. Files you already recorded stay on disk, untouched.\n- **Smaller download.** Installers no longer bundle the libmpv/FFmpeg runtime.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-arm64.zip",
-        "sha256": "9f4f50c1bd7e53f07b134bab1ae19d8cc694ca3882b1f5a36af426a009388e55",
-        "size": 164864162
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-x64.zip",
-        "sha256": "903cd25a9e64c60e8cc59ea8e1ff3c769cf6bf70b12583a7c75dc0236532ccd6",
-        "size": 166990401
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-arm64.zip",
+        "sha256": "8733de2c56cc4aeb82a13498c50b8d8f1f872d5ec21a9465959ec819961699b9",
+        "size": 164652214
       }
     }
   },
   "versions": [
+    {
+      "version": "1.4.0",
+      "date": "2026-10-09",
+      "notes": "## What's new\n\n- **One player, built in.** MPV, VLC and the experimental Embedded MPV player are gone. Live TV, movies and series now play in the built-in player (HTML5, Video.js or Art Player). If you had chosen an external player, Arc TV switches you to the default built-in one automatically.\n- **Subtitles the Apple TV way.** Clean white text with a soft shadow and no box behind it, in the system font.\n- **Live recording is removed**, together with its settings and the record button. Files you already recorded stay on disk, untouched.\n- **Smaller download.** Installers no longer bundle the libmpv/FFmpeg runtime.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-arm64.zip",
+          "sha256": "8733de2c56cc4aeb82a13498c50b8d8f1f872d5ec21a9465959ec819961699b9",
+          "size": 164652214
+        }
+      }
+    },
     {
       "version": "1.3.0",
       "date": "2026-10-09",
