@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.4.1",
+    "version": "1.4.2",
     "date": "2026-10-09",
-    "notes": "## What's new\n\n- **Subtitles on frosted glass.** Captions sit on one slightly see-through dark panel with clean white text and no outline, and scale with the player. The subtitle colour choice is gone, so captions always read the same.\n- **Phone remote: Full screen, Subtitles and Audio.** While a video plays, the phone has a Full screen button and Subtitles and Audio buttons that show the current choice and step to the next one.\n- **Episode Play button** is a dark frosted disc instead of a white blob in dark mode.\n- **Smarter lists and settings.** Recent searches keep only what you opened. Empty Radio says \"stations\". Downloads no longer calls paused items \"Downloading now\" or shows a \"0 B\" total. Live TV initials skip tags like 4K. Settings drops the stale \"recording\" wording, shows the phone pairing QR straight away and says \"latest version\" once.",
+    "notes": "## What's new\n\n- **Simpler Settings.** Five short panes: General, Playback, Library, Phone remote, and About and data. Everything technical sits behind \"Show advanced settings\", and the TMDB key is hidden until you ask to see it.\n- **Easier Add playlist.** Just a name, the portal address and the MAC. Credentials, serial, device IDs and signatures are under More options.\n- **Cleaner Home.** Continue-watching tiles show one Play button and one small actions pill, keep their titles on hover, and use a single focus ring. The hero has three matching buttons on a dark scrim in both themes, and the hover backdrop now runs edge to edge.\n- **More Apple-like look.** Frosted menus, a soft sidebar selection, one scale for text sizes and corners, and import and export icons that point the right way.\n- **Fixes.** Recently Watched and Favorites no longer show a \"hidden list\" message when empty; failed category loads have a Retry button; the Guide shows channel initials with its shortcuts behind a ? button; download titles lose repeated episode codes and dates; Arc TV starts normally even if its phone-remote port is already in use.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-arm64.zip",
-        "sha256": "1f6feeab93e1f35e621b383e093858ece7cde16dd4f2a63cbb63da68810f1791",
-        "size": 164653675
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-x64.zip",
-        "sha256": "7a9c1c21846d1b1206657a45caa6c3b3986787f2c8c01c2d38a300a4098a4b61",
-        "size": 166779914
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-arm64.zip",
+        "sha256": "527d37e1eea30cb0f18b4c55c7226bf5b587d742e22861cffc2a071349e05f47",
+        "size": 164662195
       }
     }
   },
   "versions": [
+    {
+      "version": "1.4.2",
+      "date": "2026-10-09",
+      "notes": "## What's new\n\n- **Simpler Settings.** Five short panes: General, Playback, Library, Phone remote, and About and data. Everything technical sits behind \"Show advanced settings\", and the TMDB key is hidden until you ask to see it.\n- **Easier Add playlist.** Just a name, the portal address and the MAC. Credentials, serial, device IDs and signatures are under More options.\n- **Cleaner Home.** Continue-watching tiles show one Play button and one small actions pill, keep their titles on hover, and use a single focus ring. The hero has three matching buttons on a dark scrim in both themes, and the hover backdrop now runs edge to edge.\n- **More Apple-like look.** Frosted menus, a soft sidebar selection, one scale for text sizes and corners, and import and export icons that point the right way.\n- **Fixes.** Recently Watched and Favorites no longer show a \"hidden list\" message when empty; failed category loads have a Retry button; the Guide shows channel initials with its shortcuts behind a ? button; download titles lose repeated episode codes and dates; Arc TV starts normally even if its phone-remote port is already in use.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-arm64.zip",
+          "sha256": "527d37e1eea30cb0f18b4c55c7226bf5b587d742e22861cffc2a071349e05f47",
+          "size": 164662195
+        }
+      }
+    },
     {
       "version": "1.4.1",
       "date": "2026-10-09",
