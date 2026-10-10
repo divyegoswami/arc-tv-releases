@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.4.2",
-    "date": "2026-10-09",
-    "notes": "## What's new\n\n- **Simpler Settings.** Five short panes: General, Playback, Library, Phone remote, and About and data. Everything technical sits behind \"Show advanced settings\", and the TMDB key is hidden until you ask to see it.\n- **Easier Add playlist.** Just a name, the portal address and the MAC. Credentials, serial, device IDs and signatures are under More options.\n- **Cleaner Home.** Continue-watching tiles show one Play button and one small actions pill, keep their titles on hover, and use a single focus ring. The hero has three matching buttons on a dark scrim in both themes, and the hover backdrop now runs edge to edge.\n- **More Apple-like look.** Frosted menus, a soft sidebar selection, one scale for text sizes and corners, and import and export icons that point the right way.\n- **Fixes.** Recently Watched and Favorites no longer show a \"hidden list\" message when empty; failed category loads have a Retry button; the Guide shows channel initials with its shortcuts behind a ? button; download titles lose repeated episode codes and dates; Arc TV starts normally even if its phone-remote port is already in use.",
+    "version": "1.4.3",
+    "date": "2026-10-10",
+    "notes": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1 of Chumbak) were missing; the same applies to shows with many seasons. The Android and iPhone apps get the same fix.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-arm64.zip",
-        "sha256": "527d37e1eea30cb0f18b4c55c7226bf5b587d742e22861cffc2a071349e05f47",
-        "size": 164662195
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-x64.zip",
-        "sha256": "e154686ca06ea716a841c873e565d0436d12b05636ce1fdb5bb0e52397d3d904",
-        "size": 166788434
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.3/arc-tv-1.4.3-mac-arm64.zip",
+        "sha256": "7a2d49fa00a89167e80ef1b08a47b79e1927f40f5c715e628d0f06f91d44bccd",
+        "size": 164661528
       }
     }
   },
   "versions": [
+    {
+      "version": "1.4.3",
+      "date": "2026-10-10",
+      "notes": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1 of Chumbak) were missing; the same applies to shows with many seasons. The Android and iPhone apps get the same fix.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.3/arc-tv-1.4.3-mac-arm64.zip",
+          "sha256": "7a2d49fa00a89167e80ef1b08a47b79e1927f40f5c715e628d0f06f91d44bccd",
+          "size": 164661528
+        }
+      }
+    },
     {
       "version": "1.4.2",
       "date": "2026-10-09",
