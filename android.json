@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.8",
-    "versionCode": 9,
-    "date": "2026-10-07",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.8/arc-tv-android-0.1.8.apk",
-    "sha256": "96c4a12948106933b077588c4dda4f99e6f4c5a1c2cf390be1a03e8fc27b5139",
+    "versionName": "0.1.9",
+    "versionCode": 10,
+    "date": "2026-10-10",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.9/arc-tv-android-0.1.9.apk",
+    "sha256": "dcd1559a66c565a86aca5be959ec1caf82e0cc8fa4d140e021d2499e9c320b0e",
     "size": 18502672,
     "minSdk": 26,
-    "notes": "**Arc TV for Android** 0.1.8 (early access). Phones and tablets, Android 8.0 or newer.\n\n**What's new:** the app can now update itself. Open **Settings → Updates** to check, download and install new versions, and\nArc TV looks for updates when it opens (you can turn that off). Also in this build: the floating glass tab bar, portal\nexport, Miracast, per-season downloads, live channels in Search, and a Series tab with its own categories."
+    "notes": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1) were missing; the same applies to shows with many seasons."
   },
   "versions": [
+    {
+      "versionName": "0.1.9",
+      "versionCode": 10,
+      "date": "2026-10-10",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.9/arc-tv-android-0.1.9.apk",
+      "sha256": "dcd1559a66c565a86aca5be959ec1caf82e0cc8fa4d140e021d2499e9c320b0e",
+      "size": 18502672,
+      "minSdk": 26,
+      "notes": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1) were missing; the same applies to shows with many seasons."
+    },
     {
       "versionName": "0.1.8",
       "versionCode": 9,
