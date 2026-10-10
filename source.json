@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.2.31",
+          "buildVersion": "39",
+          "date": "2026-10-10",
+          "localizedDescription": "**Fixes and polish:** watch progress is now kept per season (episode 1 of season 2 no longer overwrites episode 1 of season 1). Settings is simpler: five clear sections and a \"Show advanced settings\" switch. The player is easier to use on a phone: a roomier title, one More menu, a clean failed-playback screen, a seek bar that screen readers can use. Search says so when the network failed instead of \"No results\", episodes get a Try Again button, poster grids fill the screen evenly, text is easier to read, and error messages are in plain words.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.31/arc-tv-ios-0.2.31.ipa",
+          "size": 2098716,
+          "sha256": "c7f549503a881a2c948f3a0f5c8a6e12157dd3665d17933526455e98ae7922a3",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "0.2.30",
           "buildVersion": "38",
           "date": "2026-10-10",
@@ -44,11 +54,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.2.30",
+      "version": "0.2.31",
       "versionDate": "2026-10-10",
-      "versionDescription": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1) were missing; the same applies to shows with many seasons.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.30/arc-tv-ios-0.2.30.ipa",
-      "size": 2052525
+      "versionDescription": "**Fixes and polish:** watch progress is now kept per season (episode 1 of season 2 no longer overwrites episode 1 of season 1). Settings is simpler: five clear sections and a \"Show advanced settings\" switch. The player is easier to use on a phone: a roomier title, one More menu, a clean failed-playback screen, a seek bar that screen readers can use. Search says so when the network failed instead of \"No results\", episodes get a Try Again button, poster grids fill the screen evenly, text is easier to read, and error messages are in plain words.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.31/arc-tv-ios-0.2.31.ipa",
+      "size": 2098716
     }
   ],
   "news": []
