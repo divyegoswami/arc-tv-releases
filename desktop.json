@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.4.5",
+    "version": "1.4.6",
     "date": "2026-10-10",
-    "notes": "**A simpler, sleeker phone remote:** a glass dial with a progress ring around it, one control bar (Back, 10 seconds back and forward, Play/Pause, More), and a volume slider. Subtitles, audio, speed, the sleep timer, full screen, mute, next and previous episode, and search now live in a More menu that shows each setting's current value. On live TV the two seek keys become channel down and up.\n\n**Speed and sleep timer from the phone:** both can now be changed straight from the More menu, with no need to steer the player's own menus.\n\n**Ambient screen:** after 30 seconds idle during playback the phone dims to a true-black always-on style screen with a clock, the title and the position. A tap wakes it and dragging sideways seeks without waking it. The phone also stays awake while the remote is open. Scan the QR code again only if the remote shows \"not paired\".\n\n**Subtitles:** captions sit a little lower in the player, closer to the bottom edge.",
+    "notes": "**Phone remote fixes:** Episodes now opens the player's episode list in full screen. Use the dial to move between episodes, OK to play one, and Back to close the list before leaving full screen. The More menu gains an Episodes tile whenever there is an episode list.\n\n**Simpler More menu:** the Controls tile is gone, because the dial already reaches the player's own controls. The Play, Episodes and Trailer shortcuts now show only while nothing is playing.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.5/arc-tv-1.4.5-mac-arm64.zip",
-        "sha256": "9f67303b9991efce1a5dcdf0284dd69d52af5949ba118c2dd325ac20ab732346",
-        "size": 164674261
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.5/arc-tv-1.4.5-mac-x64.zip",
-        "sha256": "5c14240d43da7cb9d6e62a7ee7274212419326d3cc41ed840544b7c988aa5f2a",
-        "size": 166800500
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.6/arc-tv-1.4.6-mac-arm64.zip",
+        "sha256": "3ef294bb56c260381b283c86bec05fb3883ff70425dc6154ee034aa549a0af32",
+        "size": 164674443
       }
     }
   },
   "versions": [
+    {
+      "version": "1.4.6",
+      "date": "2026-10-10",
+      "notes": "**Phone remote fixes:** Episodes now opens the player's episode list in full screen. Use the dial to move between episodes, OK to play one, and Back to close the list before leaving full screen. The More menu gains an Episodes tile whenever there is an episode list.\n\n**Simpler More menu:** the Controls tile is gone, because the dial already reaches the player's own controls. The Play, Episodes and Trailer shortcuts now show only while nothing is playing.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.6/arc-tv-1.4.6-mac-arm64.zip",
+          "sha256": "3ef294bb56c260381b283c86bec05fb3883ff70425dc6154ee034aa549a0af32",
+          "size": 164674443
+        }
+      }
+    },
     {
       "version": "1.4.5",
       "date": "2026-10-10",
