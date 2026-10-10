@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.10",
-    "versionCode": 11,
+    "versionName": "0.1.11",
+    "versionCode": 12,
     "date": "2026-10-10",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.10/arc-tv-android-0.1.10.apk",
-    "sha256": "d192be3a2bef075072f98d33991700916f5cd22dd922537e281cb9fbdc096cf8",
-    "size": 18519056,
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.11/arc-tv-android-0.1.11.apk",
+    "sha256": "8b9048e23b572429364bb50254377b3aa7b8eaa26c432555db1902f99bca4161",
+    "size": 18568208,
     "minSdk": 26,
-    "notes": "**Fixes and polish:** watch progress is now kept per season (episode 1 of season 2 no longer overwrites episode 1 of season 1). Settings is simpler: five clear sections and a \"Show advanced settings\" switch. The player is easier to use on a phone: a roomier title, one More menu, a clean failed-playback screen, a seek bar that screen readers can use. Search says so when the network failed instead of \"No results\", episodes get a Try Again button, poster grids fill the screen evenly, text is easier to read, and error messages are in plain words."
+    "notes": "**Play on TV, without extra hardware.** For TVs that Google Cast and Miracast don't reach, the player has a new Play on TV button.\n\n- It lists the DLNA TVs on your Wi-Fi. Tap one and the video plays there while your phone keeps the controls.\n- TV not listed? The same sheet shows a short address to open in your TV's own browser, and the video plays there. Pausing or stopping hands the position back to your phone.\n- If a TV refuses a stream, the player says so and points you to the browser option.\n\nPhone and TV need to be on the same Wi-Fi."
   },
   "versions": [
+    {
+      "versionName": "0.1.11",
+      "versionCode": 12,
+      "date": "2026-10-10",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.11/arc-tv-android-0.1.11.apk",
+      "sha256": "8b9048e23b572429364bb50254377b3aa7b8eaa26c432555db1902f99bca4161",
+      "size": 18568208,
+      "minSdk": 26,
+      "notes": "**Play on TV, without extra hardware.** For TVs that Google Cast and Miracast don't reach, the player has a new Play on TV button.\n\n- It lists the DLNA TVs on your Wi-Fi. Tap one and the video plays there while your phone keeps the controls.\n- TV not listed? The same sheet shows a short address to open in your TV's own browser, and the video plays there. Pausing or stopping hands the position back to your phone.\n- If a TV refuses a stream, the player says so and points you to the browser option.\n\nPhone and TV need to be on the same Wi-Fi."
+    },
     {
       "versionName": "0.1.10",
       "versionCode": 11,
