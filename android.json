@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.11",
-    "versionCode": 12,
+    "versionName": "0.1.12",
+    "versionCode": 13,
     "date": "2026-10-10",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.11/arc-tv-android-0.1.11.apk",
-    "sha256": "8b9048e23b572429364bb50254377b3aa7b8eaa26c432555db1902f99bca4161",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.12/arc-tv-android-0.1.12.apk",
+    "sha256": "4f5dc7097b37c8721bfef51b7ca5ab887f01ae2f64ab9ef1599b9c4bc0c800af",
     "size": 18568208,
     "minSdk": 26,
-    "notes": "**Play on TV, without extra hardware.** For TVs that Google Cast and Miracast don't reach, the player has a new Play on TV button.\n\n- It lists the DLNA TVs on your Wi-Fi. Tap one and the video plays there while your phone keeps the controls.\n- TV not listed? The same sheet shows a short address to open in your TV's own browser, and the video plays there. Pausing or stopping hands the position back to your phone.\n- If a TV refuses a stream, the player says so and points you to the browser option.\n\nPhone and TV need to be on the same Wi-Fi."
+    "notes": "**One Cast button.** The player used to have three buttons for putting the video on a TV. It now has one, **Cast to TV**.\n\n- It opens a single sheet that lists the Google Cast and DLNA TVs on your Wi-Fi together. Tap one to connect.\n- Below the list: **Screen mirroring…** opens your phone's own cast screen for Miracast TVs, and **TV not listed?** shows an address to open in your TV's browser.\n- While you are casting, the sheet says who you are casting to and has a Stop button.\n\nPhone and TV need to be on the same Wi-Fi."
   },
   "versions": [
+    {
+      "versionName": "0.1.12",
+      "versionCode": 13,
+      "date": "2026-10-10",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.12/arc-tv-android-0.1.12.apk",
+      "sha256": "4f5dc7097b37c8721bfef51b7ca5ab887f01ae2f64ab9ef1599b9c4bc0c800af",
+      "size": 18568208,
+      "minSdk": 26,
+      "notes": "**One Cast button.** The player used to have three buttons for putting the video on a TV. It now has one, **Cast to TV**.\n\n- It opens a single sheet that lists the Google Cast and DLNA TVs on your Wi-Fi together. Tap one to connect.\n- Below the list: **Screen mirroring…** opens your phone's own cast screen for Miracast TVs, and **TV not listed?** shows an address to open in your TV's browser.\n- While you are casting, the sheet says who you are casting to and has a Stop button.\n\nPhone and TV need to be on the same Wi-Fi."
+    },
     {
       "versionName": "0.1.11",
       "versionCode": 12,
