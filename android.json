@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.9",
-    "versionCode": 10,
+    "versionName": "0.1.10",
+    "versionCode": 11,
     "date": "2026-10-10",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.9/arc-tv-android-0.1.9.apk",
-    "sha256": "dcd1559a66c565a86aca5be959ec1caf82e0cc8fa4d140e021d2499e9c320b0e",
-    "size": 18502672,
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.10/arc-tv-android-0.1.10.apk",
+    "sha256": "d192be3a2bef075072f98d33991700916f5cd22dd922537e281cb9fbdc096cf8",
+    "size": 18519056,
     "minSdk": 26,
-    "notes": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1) were missing; the same applies to shows with many seasons."
+    "notes": "**Fixes and polish:** watch progress is now kept per season (episode 1 of season 2 no longer overwrites episode 1 of season 1). Settings is simpler: five clear sections and a \"Show advanced settings\" switch. The player is easier to use on a phone: a roomier title, one More menu, a clean failed-playback screen, a seek bar that screen readers can use. Search says so when the network failed instead of \"No results\", episodes get a Try Again button, poster grids fill the screen evenly, text is easier to read, and error messages are in plain words."
   },
   "versions": [
+    {
+      "versionName": "0.1.10",
+      "versionCode": 11,
+      "date": "2026-10-10",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.10/arc-tv-android-0.1.10.apk",
+      "sha256": "d192be3a2bef075072f98d33991700916f5cd22dd922537e281cb9fbdc096cf8",
+      "size": 18519056,
+      "minSdk": 26,
+      "notes": "**Fixes and polish:** watch progress is now kept per season (episode 1 of season 2 no longer overwrites episode 1 of season 1). Settings is simpler: five clear sections and a \"Show advanced settings\" switch. The player is easier to use on a phone: a roomier title, one More menu, a clean failed-playback screen, a seek bar that screen readers can use. Search says so when the network failed instead of \"No results\", episodes get a Try Again button, poster grids fill the screen evenly, text is easier to read, and error messages are in plain words."
+    },
     {
       "versionName": "0.1.9",
       "versionCode": 10,
