@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.2.30",
+          "buildVersion": "38",
+          "date": "2026-10-10",
+          "localizedDescription": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1) were missing; the same applies to shows with many seasons.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.30/arc-tv-ios-0.2.30.ipa",
+          "size": 2052525,
+          "sha256": "330014e9cb250a5a9572ce0b8aa876e44313c6f8e1716e2a332ea831161722e1",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "0.2.29",
           "buildVersion": "37",
           "date": "2026-10-07",
@@ -34,11 +44,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.2.29",
-      "versionDate": "2026-10-07",
-      "versionDescription": "**Arc TV for iPhone and iPad** 0.2.29 (early access). Requires iOS 18 or newer.\n\n**What's new:** Arc TV now tells you when a new version is out (**Settings → Updates**) and opens SideStore to install it,\nwith a one-tap **Add Arc TV to SideStore**. Also in this build: portal export, per-season downloads, live channels in\nSearch, and a Series tab with its own categories.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.29/arc-tv-ios-0.2.29.ipa",
-      "size": 2050585
+      "version": "0.2.30",
+      "versionDate": "2026-10-10",
+      "versionDescription": "**Fix:** shows whose portal lists a season in pages now show every episode. Some portals send 14 at a time, newest first, so the oldest episodes (like Season 1 Episode 1) were missing; the same applies to shows with many seasons.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.30/arc-tv-ios-0.2.30.ipa",
+      "size": 2052525
     }
   ],
   "news": []
