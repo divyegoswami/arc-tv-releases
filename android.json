@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.12",
-    "versionCode": 13,
+    "versionName": "0.1.13",
+    "versionCode": 14,
     "date": "2026-10-10",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.12/arc-tv-android-0.1.12.apk",
-    "sha256": "4f5dc7097b37c8721bfef51b7ca5ab887f01ae2f64ab9ef1599b9c4bc0c800af",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.13/arc-tv-android-0.1.13.apk",
+    "sha256": "60ee4fd9852f9900a2aacd31fa2a2d17ac671fb5ef83c1ad0f9349656d53beb4",
     "size": 18568208,
     "minSdk": 26,
-    "notes": "**One Cast button.** The player used to have three buttons for putting the video on a TV. It now has one, **Cast to TV**.\n\n- It opens a single sheet that lists the Google Cast and DLNA TVs on your Wi-Fi together. Tap one to connect.\n- Below the list: **Screen mirroring…** opens your phone's own cast screen for Miracast TVs, and **TV not listed?** shows an address to open in your TV's browser.\n- While you are casting, the sheet says who you are casting to and has a Stop button.\n\nPhone and TV need to be on the same Wi-Fi."
+    "notes": "**Fix: casting to a browser no longer plays only sound.** Some streams carry HEVC video in TS segments, which Safari's own player can't show, so casting to Safari (or a TV browser) gave sound with no picture.\n\n- The page now switches to its own player automatically and carries on from the same spot.\n- If a browser still can't show the picture, the page and your phone say so, with the video's format.\n\nThe browser or TV needs internet access for the switch."
   },
   "versions": [
+    {
+      "versionName": "0.1.13",
+      "versionCode": 14,
+      "date": "2026-10-10",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.13/arc-tv-android-0.1.13.apk",
+      "sha256": "60ee4fd9852f9900a2aacd31fa2a2d17ac671fb5ef83c1ad0f9349656d53beb4",
+      "size": 18568208,
+      "minSdk": 26,
+      "notes": "**Fix: casting to a browser no longer plays only sound.** Some streams carry HEVC video in TS segments, which Safari's own player can't show, so casting to Safari (or a TV browser) gave sound with no picture.\n\n- The page now switches to its own player automatically and carries on from the same spot.\n- If a browser still can't show the picture, the page and your phone say so, with the video's format.\n\nThe browser or TV needs internet access for the switch."
+    },
     {
       "versionName": "0.1.12",
       "versionCode": 13,
