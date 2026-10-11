@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.13",
-    "versionCode": 14,
-    "date": "2026-10-10",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.13/arc-tv-android-0.1.13.apk",
-    "sha256": "60ee4fd9852f9900a2aacd31fa2a2d17ac671fb5ef83c1ad0f9349656d53beb4",
+    "versionName": "0.1.14",
+    "versionCode": 15,
+    "date": "2026-10-11",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.14/arc-tv-android-0.1.14.apk",
+    "sha256": "f01fd1f52fcd066d7a76cf1db333473fa63124a693b389a4a3bfbc3fde1cac1f",
     "size": 18568208,
     "minSdk": 26,
-    "notes": "**Fix: casting to a browser no longer plays only sound.** Some streams carry HEVC video in TS segments, which Safari's own player can't show, so casting to Safari (or a TV browser) gave sound with no picture.\n\n- The page now switches to its own player automatically and carries on from the same spot.\n- If a browser still can't show the picture, the page and your phone say so, with the video's format.\n\nThe browser or TV needs internet access for the switch."
+    "notes": "**Fix: casting a movie to a browser no longer gives only sound and subtitles.** Safari's own player can't show some HEVC streams (common on IPTV portals) but still reports a picture size, so the page didn't notice.\n\n- The page now checks that video frames are really being drawn, and switches to its own player automatically when they are not.\n- Background browser tabs are ignored, so a hidden tab never triggers a false warning.\n- Tested with a real portal movie in Safari: the picture now appears after the switch.\n\nThe browser or TV needs internet access for the switch."
   },
   "versions": [
+    {
+      "versionName": "0.1.14",
+      "versionCode": 15,
+      "date": "2026-10-11",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.14/arc-tv-android-0.1.14.apk",
+      "sha256": "f01fd1f52fcd066d7a76cf1db333473fa63124a693b389a4a3bfbc3fde1cac1f",
+      "size": 18568208,
+      "minSdk": 26,
+      "notes": "**Fix: casting a movie to a browser no longer gives only sound and subtitles.** Safari's own player can't show some HEVC streams (common on IPTV portals) but still reports a picture size, so the page didn't notice.\n\n- The page now checks that video frames are really being drawn, and switches to its own player automatically when they are not.\n- Background browser tabs are ignored, so a hidden tab never triggers a false warning.\n- Tested with a real portal movie in Safari: the picture now appears after the switch.\n\nThe browser or TV needs internet access for the switch."
+    },
     {
       "versionName": "0.1.13",
       "versionCode": 14,
