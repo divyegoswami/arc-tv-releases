@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.2.33",
+          "buildVersion": "41",
+          "date": "2026-10-11",
+          "localizedDescription": "**Fix: series open as series.** Titles from the Series tab, Home's New Series shelf and Search now open with their episode list, not as single movies.\n\n- **Download all** is now a labelled button on a series.\n- Switches in Settings are easy to read again, and **Check for updates** shows its result.\n- The first screen has clear **Portal address** and **MAC address** labels with a short explanation.\n\nSeries you saved before this update may still appear under Movies in your Library.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.33/arc-tv-ios-0.2.33.ipa",
+          "size": 2190946,
+          "sha256": "e5dafe4daaca90213b4533d51c30627f289fcc17ef4222145149b3e87b5928bd",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "0.2.32",
           "buildVersion": "40",
           "date": "2026-10-11",
@@ -64,11 +74,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.2.32",
+      "version": "0.2.33",
       "versionDate": "2026-10-11",
-      "versionDescription": "**Design polish across the app.**\n\n- Posters show their title on two lines and the year, so similar titles are easy to tell apart.\n- The status bar stays readable over bright artwork, and the Movies, Series, Live TV and Search titles sit right under it.\n- Detail has labelled **My List** and **Download** buttons, shows how much is left when you resume, and no longer has the tab bar over the text.\n- Search keeps your typing lowercase and remembers your recent searches.\n- Live Now cards are more compact, channel rows show their channel number, and portal names read in normal capitals.\n- Update notes show as plain text, and large text sizes wrap cleanly.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.32/arc-tv-ios-0.2.32.ipa",
-      "size": 2177609
+      "versionDescription": "**Fix: series open as series.** Titles from the Series tab, Home's New Series shelf and Search now open with their episode list, not as single movies.\n\n- **Download all** is now a labelled button on a series.\n- Switches in Settings are easy to read again, and **Check for updates** shows its result.\n- The first screen has clear **Portal address** and **MAC address** labels with a short explanation.\n\nSeries you saved before this update may still appear under Movies in your Library.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.33/arc-tv-ios-0.2.33.ipa",
+      "size": 2190946
     }
   ],
   "news": []
