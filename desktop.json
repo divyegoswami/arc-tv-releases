@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.4.7",
+    "version": "1.4.8",
     "date": "2026-10-11",
-    "notes": "**Phone remote stays connected:** when your phone's screen times out, the remote now reconnects within seconds of waking, keeps its controls on screen under a \"Reconnecting to your Mac\" banner (with Retry now) instead of going blank, and retries commands such as Search. It also keeps the phone's screen on while you are using it (up to 10 minutes without a touch).\n\n**More reliable on the Mac:** a phone that goes to sleep no longer uses up the Mac's remote connections. The Mac now replaces the old connection when the same phone comes back, so it never refuses a returning phone.\n\n**Its own icon:** the remote has a black-and-white click-pad icon, so it no longer looks like the Arc TV app on your home screen. Delete the old shortcut and add it again to see it.",
+    "notes": "The phone remote's More menu works again: Search, Speed, Sleep timer, Full screen, Subtitles and the other tiles now respond to taps while a title is playing. After updating, reload the remote shortcut on your phone once.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.7/arc-tv-1.4.7-mac-arm64.zip",
-        "sha256": "0408514da7a0f6d0b48870b86c68977aa51fbe3b610dea3fb745d234108395b3",
-        "size": 164682912
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.7/arc-tv-1.4.7-mac-x64.zip",
-        "sha256": "78726ba0264ba5550f3cf4bb51a20728d94c351c9acca34d7df447d416f327bf",
-        "size": 166809151
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-arm64.zip",
+        "sha256": "ec15a7c742579a20e3a14d1f6816f38935827966f748ef95a3da65e0b812dd14",
+        "size": 164682481
       }
     }
   },
   "versions": [
+    {
+      "version": "1.4.8",
+      "date": "2026-10-11",
+      "notes": "The phone remote's More menu works again: Search, Speed, Sleep timer, Full screen, Subtitles and the other tiles now respond to taps while a title is playing. After updating, reload the remote shortcut on your phone once.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-arm64.zip",
+          "sha256": "ec15a7c742579a20e3a14d1f6816f38935827966f748ef95a3da65e0b812dd14",
+          "size": 164682481
+        }
+      }
+    },
     {
       "version": "1.4.7",
       "date": "2026-10-11",
