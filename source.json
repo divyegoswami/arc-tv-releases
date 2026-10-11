@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.2.32",
+          "buildVersion": "40",
+          "date": "2026-10-11",
+          "localizedDescription": "**Design polish across the app.**\n\n- Posters show their title on two lines and the year, so similar titles are easy to tell apart.\n- The status bar stays readable over bright artwork, and the Movies, Series, Live TV and Search titles sit right under it.\n- Detail has labelled **My List** and **Download** buttons, shows how much is left when you resume, and no longer has the tab bar over the text.\n- Search keeps your typing lowercase and remembers your recent searches.\n- Live Now cards are more compact, channel rows show their channel number, and portal names read in normal capitals.\n- Update notes show as plain text, and large text sizes wrap cleanly.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.32/arc-tv-ios-0.2.32.ipa",
+          "size": 2177609,
+          "sha256": "f046b86c45e68453b7d0166409132b533553491ac5bf1bbe72b4c8eda359293a",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "0.2.31",
           "buildVersion": "39",
           "date": "2026-10-10",
@@ -54,11 +64,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.2.31",
-      "versionDate": "2026-10-10",
-      "versionDescription": "**Fixes and polish:** watch progress is now kept per season (episode 1 of season 2 no longer overwrites episode 1 of season 1). Settings is simpler: five clear sections and a \"Show advanced settings\" switch. The player is easier to use on a phone: a roomier title, one More menu, a clean failed-playback screen, a seek bar that screen readers can use. Search says so when the network failed instead of \"No results\", episodes get a Try Again button, poster grids fill the screen evenly, text is easier to read, and error messages are in plain words.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.31/arc-tv-ios-0.2.31.ipa",
-      "size": 2098716
+      "version": "0.2.32",
+      "versionDate": "2026-10-11",
+      "versionDescription": "**Design polish across the app.**\n\n- Posters show their title on two lines and the year, so similar titles are easy to tell apart.\n- The status bar stays readable over bright artwork, and the Movies, Series, Live TV and Search titles sit right under it.\n- Detail has labelled **My List** and **Download** buttons, shows how much is left when you resume, and no longer has the tab bar over the text.\n- Search keeps your typing lowercase and remembers your recent searches.\n- Live Now cards are more compact, channel rows show their channel number, and portal names read in normal capitals.\n- Update notes show as plain text, and large text sizes wrap cleanly.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.32/arc-tv-ios-0.2.32.ipa",
+      "size": 2177609
     }
   ],
   "news": []
