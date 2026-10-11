@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.17",
-    "versionCode": 18,
+    "versionName": "0.1.18",
+    "versionCode": 19,
     "date": "2026-10-11",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.17/arc-tv-android-0.1.17.apk",
-    "sha256": "272ebae3e50da7eb74174984c20e5fe64ffe5cf3397109b298ebba25339c766c",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.18/arc-tv-android-0.1.18.apk",
+    "sha256": "2199466b19d3c3c42c57cc50fe9f650da4e55c2610a9ce7930290ad6a5901d9c",
     "size": 18600976,
     "minSdk": 26,
-    "notes": "Casting to a TV over DLNA no longer closes the app a few seconds in when the TV stops answering or refuses a command: playback shows an error instead, a refused seek is ignored, and the app waits longer on a slow TV."
+    "notes": "Casting live TV to a Samsung TV over DLNA no longer shows \"The TV refused the request\" while the picture plays: refused position checks are ignored, Play is retried while the TV loads, and the log names any refused action."
   },
   "versions": [
+    {
+      "versionName": "0.1.18",
+      "versionCode": 19,
+      "date": "2026-10-11",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.18/arc-tv-android-0.1.18.apk",
+      "sha256": "2199466b19d3c3c42c57cc50fe9f650da4e55c2610a9ce7930290ad6a5901d9c",
+      "size": 18600976,
+      "minSdk": 26,
+      "notes": "Casting live TV to a Samsung TV over DLNA no longer shows \"The TV refused the request\" while the picture plays: refused position checks are ignored, Play is retried while the TV loads, and the log names any refused action."
+    },
     {
       "versionName": "0.1.17",
       "versionCode": 18,
