@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.16",
-    "versionCode": 17,
+    "versionName": "0.1.17",
+    "versionCode": 18,
     "date": "2026-10-11",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.16/arc-tv-android-0.1.16.apk",
-    "sha256": "be384df0f5cef0a180ca9ec30ec6c67ba8fb295f3a8c1949f13bbb45bee27a87",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.17/arc-tv-android-0.1.17.apk",
+    "sha256": "272ebae3e50da7eb74174984c20e5fe64ffe5cf3397109b298ebba25339c766c",
     "size": 18600976,
     "minSdk": 26,
-    "notes": "**Design polish across the app.**\n\n- The home hero now fits phones, tablets, landscape and large text sizes, and the first shelf shows without scrolling.\n- Posters show their title on two lines and the year, so similar titles are easy to tell apart.\n- One **Cast** button in the player opens a single sheet for Google Cast, DLNA TVs, screen mirroring and your TV's browser. The TV-browser screen no longer has controls drawn over its address.\n- Detail has labelled buttons, shows how much is left when you resume, and episodes are cleaner. The player has a Rotate control.\n- Search remembers your recent searches and its empty state fits above the keyboard.\n- Tab labels stay readable over bright artwork. Update notes, sign-in errors and Settings read in plain language."
+    "notes": "Casting to a TV over DLNA no longer closes the app a few seconds in when the TV stops answering or refuses a command: playback shows an error instead, a refused seek is ignored, and the app waits longer on a slow TV."
   },
   "versions": [
+    {
+      "versionName": "0.1.17",
+      "versionCode": 18,
+      "date": "2026-10-11",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.17/arc-tv-android-0.1.17.apk",
+      "sha256": "272ebae3e50da7eb74174984c20e5fe64ffe5cf3397109b298ebba25339c766c",
+      "size": 18600976,
+      "minSdk": 26,
+      "notes": "Casting to a TV over DLNA no longer closes the app a few seconds in when the TV stops answering or refuses a command: playback shows an error instead, a refused seek is ignored, and the app waits longer on a slow TV."
+    },
     {
       "versionName": "0.1.16",
       "versionCode": 17,
