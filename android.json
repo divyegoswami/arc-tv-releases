@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.14",
-    "versionCode": 15,
+    "versionName": "0.1.16",
+    "versionCode": 17,
     "date": "2026-10-11",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.14/arc-tv-android-0.1.14.apk",
-    "sha256": "f01fd1f52fcd066d7a76cf1db333473fa63124a693b389a4a3bfbc3fde1cac1f",
-    "size": 18568208,
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.16/arc-tv-android-0.1.16.apk",
+    "sha256": "be384df0f5cef0a180ca9ec30ec6c67ba8fb295f3a8c1949f13bbb45bee27a87",
+    "size": 18600976,
     "minSdk": 26,
-    "notes": "**Fix: casting a movie to a browser no longer gives only sound and subtitles.** Safari's own player can't show some HEVC streams (common on IPTV portals) but still reports a picture size, so the page didn't notice.\n\n- The page now checks that video frames are really being drawn, and switches to its own player automatically when they are not.\n- Background browser tabs are ignored, so a hidden tab never triggers a false warning.\n- Tested with a real portal movie in Safari: the picture now appears after the switch.\n\nThe browser or TV needs internet access for the switch."
+    "notes": "**Design polish across the app.**\n\n- The home hero now fits phones, tablets, landscape and large text sizes, and the first shelf shows without scrolling.\n- Posters show their title on two lines and the year, so similar titles are easy to tell apart.\n- One **Cast** button in the player opens a single sheet for Google Cast, DLNA TVs, screen mirroring and your TV's browser. The TV-browser screen no longer has controls drawn over its address.\n- Detail has labelled buttons, shows how much is left when you resume, and episodes are cleaner. The player has a Rotate control.\n- Search remembers your recent searches and its empty state fits above the keyboard.\n- Tab labels stay readable over bright artwork. Update notes, sign-in errors and Settings read in plain language."
   },
   "versions": [
+    {
+      "versionName": "0.1.16",
+      "versionCode": 17,
+      "date": "2026-10-11",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.16/arc-tv-android-0.1.16.apk",
+      "sha256": "be384df0f5cef0a180ca9ec30ec6c67ba8fb295f3a8c1949f13bbb45bee27a87",
+      "size": 18600976,
+      "minSdk": 26,
+      "notes": "**Design polish across the app.**\n\n- The home hero now fits phones, tablets, landscape and large text sizes, and the first shelf shows without scrolling.\n- Posters show their title on two lines and the year, so similar titles are easy to tell apart.\n- One **Cast** button in the player opens a single sheet for Google Cast, DLNA TVs, screen mirroring and your TV's browser. The TV-browser screen no longer has controls drawn over its address.\n- Detail has labelled buttons, shows how much is left when you resume, and episodes are cleaner. The player has a Rotate control.\n- Search remembers your recent searches and its empty state fits above the keyboard.\n- Tab labels stay readable over bright artwork. Update notes, sign-in errors and Settings read in plain language."
+    },
     {
       "versionName": "0.1.14",
       "versionCode": 15,
