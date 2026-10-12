@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install Arc TV on iPhone</title>
+<style>
+/* Dark is the default palette. Light is applied by system preference or data-theme. */
+:root {
+  color-scheme: dark;
+  --bg: #09090b;
+  --ink: #f4f4f7;
+  --ink-2: rgba(244, 244, 247, .70);
+  --ink-3: rgba(244, 244, 247, .52);
+  --surface: rgba(255, 255, 255, .08);
+  --surface-strong: rgba(255, 255, 255, .14);
+  --hairline: rgba(255, 255, 255, .10);
+  --rim: rgba(255, 255, 255, .12);
+  --ok: #35d07f;
+  --live: #ff5a52;
+  --action: #f4f4f7;
+  --action-on: #000;
+  --glow: rgba(255, 255, 255, .06);
+  --shadow: 0 2px 5px rgba(0, 0, 0, .16), 0 14px 32px rgba(0, 0, 0, .28);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --bg: #f5f5f7;
+    --ink: #111;
+    --ink-2: rgba(17, 17, 17, .72);
+    --ink-3: rgba(17, 17, 17, .52);
+    --surface: rgba(0, 0, 0, .05);
+    --surface-strong: rgba(0, 0, 0, .10);
+    --hairline: rgba(0, 0, 0, .10);
+    --rim: rgba(0, 0, 0, .12);
+    --ok: #17834a;
+    --live: #c42a22;
+    --action: #111;
+    --action-on: #fff;
+    --glow: rgba(0, 0, 0, .035);
+    --shadow: none;
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f5f7;
+  --ink: #111;
+  --ink-2: rgba(17, 17, 17, .72);
+  --ink-3: rgba(17, 17, 17, .52);
+  --surface: rgba(0, 0, 0, .05);
+  --surface-strong: rgba(0, 0, 0, .10);
+  --hairline: rgba(0, 0, 0, .10);
+  --rim: rgba(0, 0, 0, .12);
+  --ok: #17834a;
+  --live: #c42a22;
+  --action: #111;
+  --action-on: #fff;
+  --glow: rgba(0, 0, 0, .035);
+  --shadow: none;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, 'SF Pro Display', 'SF Pro Text', system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+/* Gentle page glow at the top, as in the app. Decorative only. */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60vh;
+  background: radial-gradient(ellipse at top, var(--glow), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+h1, h2, h3 { line-height: 1.2; margin: 0; font-weight: 700; }
+h1 { font-size: 2.1rem; letter-spacing: -0.02em; margin-bottom: .6rem; }
+h2 { font-size: 1.6rem; letter-spacing: -0.015em; margin-bottom: .9rem; }
+h3 { font-size: 1.4rem; letter-spacing: -0.01em; }
+
+p { margin: 0 0 .9rem; }
+ul, ol { margin: 0 0 .9rem; padding-left: 1.5rem; }
+li + li { margin-top: .5rem; }
+
+a { color: var(--ink); text-decoration: underline; text-underline-offset: .2em; }
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Header */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+.brand svg { width: 2.4rem; height: 2.4rem; flex: none; }
+.subtitle { font-size: 1.15rem; color: var(--ink-2); margin-bottom: 1.25rem; }
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  padding: .85rem 1.1rem;
+  margin: 0 0 1.5rem;
+  box-shadow: var(--shadow);
+}
+.progress-label { font-size: .95rem; font-weight: 600; color: var(--ink-2); }
+.progress-count { font-size: 1.3rem; font-weight: 700; }
+
+/* Small boxes */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin-top: 1.75rem;
+  box-shadow: var(--shadow);
+}
+.panel h2 { margin-bottom: .75rem; }
+.before ul { margin-bottom: 1rem; }
+.note { margin: 0; }
+.note .live { color: var(--live); font-weight: 700; }
+.steps-wrap { margin-top: 2rem; }
+
+/* Steps */
+.steps { list-style: none; margin: 0; padding: 0; }
+.step {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 28px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: opacity .2s ease;
+}
+.step.is-done { opacity: .72; }
+.step-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem .75rem;
+  margin-bottom: .75rem;
+}
+.step-head h3 { flex: 1 1 10rem; }
+.step-num {
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--action);
+  color: var(--action-on);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.done-tag {
+  display: none;
+  align-items: center;
+  gap: .35rem;
+  font-weight: 700;
+  color: var(--ok);
+  border: 1px solid var(--ok);
+  border-radius: 999px;
+  padding: .1rem .75rem .1rem .55rem;
+}
+.done-tag svg { width: 1.1rem; height: 1.1rem; flex: none; }
+.step.is-done .done-tag { display: inline-flex; }
+
+.where {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+  color: var(--ink-2);
+}
+.badge {
+  display: inline-block;
+  padding: .1rem .7rem;
+  border: 1px solid var(--rim);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.substeps { margin-bottom: .25rem; }
+
+/* Buttons: capsules, 56px minimum tap target */
+.button,
+.toggle,
+.copy-btn,
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  width: 100%;
+  min-height: 56px;
+  padding: .85rem 1.5rem;
+  margin: .5rem 0;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .12s ease, filter .12s ease;
+}
+.button:active,
+.toggle:active,
+.copy-btn:active {
+  transform: scale(.97);
+  filter: brightness(.9);
+}
+.button-primary,
+.copy-btn {
+  background: var(--action);
+  color: var(--action-on);
+}
+.button-secondary,
+.toggle {
+  background: var(--surface-strong);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--rim);
+}
+.toggle {
+  margin-top: 1rem;
+}
+.toggle[aria-pressed="true"] {
+  background: var(--action);
+  color: var(--action-on);
+}
+.box {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.toggle[aria-pressed="true"] .box::after { content: "\2713"; }
+
+.small-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 56px;
+  font-size: 1rem;
+  color: var(--ink-2);
+}
+.link-button {
+  width: auto;
+  padding: .75rem 1rem;
+  background: none;
+  color: var(--ink-2);
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Fallback address */
+.fallback {
+  border-top: 1px dashed var(--rim);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.address {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--rim);
+  border-radius: 20px;
+  padding: .85rem 1rem;
+  overflow-wrap: anywhere;
+  user-select: all;
+  -webkit-user-select: all;
+}
+.copy-msg { min-height: 1.55em; font-weight: 700; margin: 0; }
+
+.tip {
+  background: var(--bg);
+  border: 1px solid var(--rim);
+  border-radius: 20px;
+  padding: .85rem 1rem;
+}
+
+/* Footer */
+.restart { text-align: center; margin: 2rem 0 1rem; }
+footer {
+  border-top: 1px solid var(--hairline);
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: var(--ink-2);
+}
+footer p { margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .button:active,
+  .toggle:active,
+  .copy-btn:active {
+    transform: none;
+  }
+}
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="mark" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#27272b"/>
+            <stop offset="1" stop-color="#060607"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="64" height="64" rx="15" fill="url(#mark)"/>
+        <path d="M25 20 L45 32 L25 44 Z" fill="#f4f4f7"/>
+      </svg>
+      <span>Arc TV</span>
+    </div>
+    <h1>Install Arc TV on your iPhone</h1>
+    <p class="subtitle">Free. Takes about 20 minutes. You only do this once.</p>
+    <div class="progress">
+      <span class="progress-label">Progress</span>
+      <span class="progress-count" id="progress" aria-live="polite">0 of 8 steps done</span>
+    </div>
+  </header>
+
+  <section class="panel before" aria-labelledby="before-title">
+    <h2 id="before-title">Before you start</h2>
+    <p>You need:</p>
+    <ul>
+      <li><strong>Your iPhone</strong>, with iOS 18 or newer. To check, go to Settings → General → About.</li>
+      <li><strong>Your Mac.</strong></li>
+      <li><strong>The charging cable.</strong></li>
+      <li><strong>Wi-Fi.</strong></li>
+      <li><strong>Your Apple ID.</strong> This is the email and password you use for the App Store.</li>
+    </ul>
+    <p class="note"><span class="live">Note:</span> Apple allows 3 sideloaded apps at once on a free Apple ID.</p>
+  </section>
+
+  <section class="steps-wrap" aria-labelledby="steps-title">
+    <h2 id="steps-title">The steps</h2>
+    <ol class="steps">
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Turn on Developer Mode</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">iPhone</span></p>
+        <ol class="substeps">
+          <li>Go to Settings → Privacy &amp; Security → scroll to the bottom → Developer Mode → turn it ON.</li>
+          <li>The phone restarts.</li>
+          <li>After it restarts, tap "Turn On" and type your passcode.</li>
+        </ol>
+        <button type="button" class="toggle" data-toggle="1" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Get LocalDevVPN (free)</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">iPhone</span></p>
+        <ol class="substeps">
+          <li>Tap the button below to open LocalDevVPN in the App Store.</li>
+          <li>Install it.</li>
+          <li>Do not open it yet.</li>
+        </ol>
+        <a class="button button-primary" href="https://apps.apple.com/app/id6755608044">Open LocalDevVPN in the App Store</a>
+        <button type="button" class="toggle" data-toggle="2" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Get iloader (free)</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">Mac</span></p>
+        <ol class="substeps">
+          <li>Tap the button below to download iloader on your Mac.</li>
+          <li>Open it.</li>
+          <li>If the Mac says it can't open it, right-click the app and choose Open.</li>
+        </ol>
+        <a class="button button-primary" href="https://iloader.app">Download iloader on your Mac</a>
+        <button type="button" class="toggle" data-toggle="3" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">4</span>
+          <h3>Connect the phone</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">Mac + iPhone</span></p>
+        <ol class="substeps">
+          <li>Plug the iPhone into the Mac with the cable.</li>
+          <li>On the phone, tap Trust and type the passcode.</li>
+        </ol>
+        <button type="button" class="toggle" data-toggle="4" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">5</span>
+          <h3>Install SideStore with iloader</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">Mac</span></p>
+        <ol class="substeps">
+          <li>In iloader, sign in with your Apple ID. Then tap "Install SideStore".</li>
+          <li>Wait until it says it is done. If it asks about the pairing file, say yes.</li>
+          <li>Then unplug the cable.</li>
+        </ol>
+        <button type="button" class="toggle" data-toggle="5" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">6</span>
+          <h3>Trust the app</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">iPhone</span></p>
+        <ol class="substeps">
+          <li>Go to Settings → General → VPN &amp; Device Management.</li>
+          <li>Tap your Apple ID email.</li>
+          <li>Tap Trust.</li>
+        </ol>
+        <button type="button" class="toggle" data-toggle="6" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">7</span>
+          <h3>Open SideStore</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">iPhone</span></p>
+        <ol class="substeps">
+          <li>Open SideStore.</li>
+          <li>Sign in with your Apple ID if it asks.</li>
+        </ol>
+        <p><a class="small-link" href="https://sidestore.io">About SideStore</a></p>
+        <button type="button" class="toggle" data-toggle="7" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+      <li class="step">
+        <div class="step-head">
+          <span class="step-num" aria-hidden="true">8</span>
+          <h3>Install Arc TV</h3>
+          <span class="done-tag"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Done</span>
+        </div>
+        <p class="where">Where: <span class="badge">iPhone</span></p>
+        <ol class="substeps">
+          <li>Open LocalDevVPN and tap Connect. Keep it connected.</li>
+          <li>Tap the big button below. It opens SideStore and adds Arc TV.</li>
+          <li>Then tap Arc TV → Get / Install and wait.</li>
+        </ol>
+        <a class="button button-primary" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdivyegoswami%2Farc-tv-releases%2Fmain%2Fsource.json">Add Arc TV to SideStore</a>
+
+        <div class="fallback">
+          <p>If the button does nothing, copy this address, open SideStore → Sources → the + button → paste it:</p>
+          <p class="address" id="source-address">https://raw.githubusercontent.com/divyegoswami/arc-tv-releases/main/source.json</p>
+          <button type="button" class="copy-btn" id="copy-btn">Copy address</button>
+          <p class="copy-msg" id="copy-msg" role="status"></p>
+        </div>
+
+        <p><strong>Done!</strong></p>
+        <button type="button" class="toggle" data-toggle="8" aria-pressed="false"><span class="box" aria-hidden="true"></span>I did this</button>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="panel" aria-labelledby="keep-title">
+    <h2 id="keep-title">Keep Arc TV working: refresh every week</h2>
+    <p>Apple stops the app from opening after 7 days unless it is refreshed. This is normal, not a fault.</p>
+    <p>To refresh:</p>
+    <ol>
+      <li>Open LocalDevVPN → Connect.</li>
+      <li>Open SideStore → My Apps → Refresh All.</li>
+      <li>Wait for the green tick.</li>
+    </ol>
+    <p class="tip"><strong>Tip:</strong> keep LocalDevVPN connected and Wi-Fi on. SideStore then tries to refresh by itself in the background.</p>
+    <a class="button button-secondary" href="sidestore://">Open SideStore</a>
+  </section>
+
+  <section class="panel" aria-labelledby="updates-title">
+    <h2 id="updates-title">New versions of Arc TV</h2>
+    <ol>
+      <li>Open SideStore → My Apps.</li>
+      <li>If an Update button shows next to Arc TV, tap it.</li>
+    </ol>
+    <p>Arc TV also says when a new version is out (Settings → Updates) and opens SideStore for you.</p>
+    <p><strong>Arc TV does not update fully by itself. One tap is needed.</strong></p>
+  </section>
+
+  <section class="panel" aria-labelledby="trouble-title">
+    <h2 id="trouble-title">If something goes wrong</h2>
+    <ul>
+      <li>Check that LocalDevVPN says Connected.</li>
+      <li>Check that Wi-Fi is on.</li>
+      <li>Close and reopen SideStore.</li>
+      <li>If Arc TV won't open, do the weekly refresh.</li>
+      <li>If you are still stuck, send a photo of the screen to the person who sent you this page.</li>
+    </ul>
+  </section>
+
+  <p class="restart">
+    <button type="button" class="link-button" id="restart">Start again</button>
+  </p>
+
+  <footer>
+    <p>Arc TV is not made by or connected to Apple. SideStore and iloader are separate free projects.</p>
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  var KEY = 'arctv-iphone-setup-done';
+  var toggles = Array.prototype.slice.call(document.querySelectorAll('[data-toggle]'));
+  var total = toggles.length;
+  var counter = document.getElementById('progress');
+  var done = {};
+
+  function readStore() {
+    try {
+      var raw = window.localStorage.getItem(KEY);
+      var parsed = raw ? JSON.parse(raw) : {};
+      return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function writeStore() {
+    try {
+      window.localStorage.setItem(KEY, JSON.stringify(done));
+    } catch (e) { /* storage unavailable: the page still works */ }
+  }
+
+  function clearStore() {
+    try {
+      window.localStorage.removeItem(KEY);
+    } catch (e) { /* storage unavailable: nothing to clear */ }
+  }
+
+  function render() {
+    var count = 0;
+    toggles.forEach(function (btn) {
+      var id = btn.getAttribute('data-toggle');
+      var on = done[id] === true;
+      if (on) { count += 1; }
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      var card = btn.closest('.step');
+      if (card) { card.classList.toggle('is-done', on); }
+    });
+    counter.textContent = count + ' of ' + total + ' steps done';
+  }
+
+  toggles.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-toggle');
+      done[id] = !done[id];
+      writeStore();
+      render();
+    });
+  });
+
+  document.getElementById('restart').addEventListener('click', function () {
+    done = {};
+    clearStore();
+    render();
+  });
+
+  function selectText(el) {
+    try {
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    } catch (e) { /* selection not supported: the user can still press and hold */ }
+  }
+
+  var copyBtn = document.getElementById('copy-btn');
+  var copyMsg = document.getElementById('copy-msg');
+  var addressEl = document.getElementById('source-address');
+
+  copyBtn.addEventListener('click', function () {
+    var text = addressEl.textContent.trim();
+    function failed() {
+      selectText(addressEl);
+      copyMsg.textContent = 'Press and hold the address, then tap Copy.';
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () {
+        copyMsg.textContent = 'Address copied.';
+      }, failed);
+    } catch (e) {
+      failed();
+    }
+  });
+
+  done = readStore();
+  render();
+})();
+</script>
+</body>
+</html>
