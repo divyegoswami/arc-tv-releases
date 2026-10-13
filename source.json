@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "2.0.0",
+          "buildVersion": "42",
+          "date": "2026-10-13",
+          "localizedDescription": "Arc TV 2.0 for iPhone and iPad (early access): Browse by genre with an optional library index, the same new backup file as the Mac (optional passphrase for passwords and your TMDB key), an optional sync folder (Settings → Sync), Up Next, sleep timer, channel schedule, adult-content PIN and accessibility improvements. Update through SideStore.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.0.0/arc-tv-ios-2.0.0.ipa",
+          "size": 3168529,
+          "sha256": "26c96f27c3cbcf4843b3733c4703d11552d5523dd5837dfb313193c193c2c727",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "0.2.33",
           "buildVersion": "41",
           "date": "2026-10-11",
@@ -74,11 +84,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "0.2.33",
-      "versionDate": "2026-10-11",
-      "versionDescription": "**Fix: series open as series.** Titles from the Series tab, Home's New Series shelf and Search now open with their episode list, not as single movies.\n\n- **Download all** is now a labelled button on a series.\n- Switches in Settings are easy to read again, and **Check for updates** shows its result.\n- The first screen has clear **Portal address** and **MAC address** labels with a short explanation.\n\nSeries you saved before this update may still appear under Movies in your Library.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-0.2.33/arc-tv-ios-0.2.33.ipa",
-      "size": 2190946
+      "version": "2.0.0",
+      "versionDate": "2026-10-13",
+      "versionDescription": "Arc TV 2.0 for iPhone and iPad (early access): Browse by genre with an optional library index, the same new backup file as the Mac (optional passphrase for passwords and your TMDB key), an optional sync folder (Settings → Sync), Up Next, sleep timer, channel schedule, adult-content PIN and accessibility improvements. Update through SideStore.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.0.0/arc-tv-ios-2.0.0.ipa",
+      "size": 3168529
     }
   ],
   "news": []
