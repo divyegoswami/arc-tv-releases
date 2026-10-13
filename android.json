@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "0.1.18",
-    "versionCode": 19,
-    "date": "2026-10-11",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-0.1.18/arc-tv-android-0.1.18.apk",
-    "sha256": "2199466b19d3c3c42c57cc50fe9f650da4e55c2610a9ce7930290ad6a5901d9c",
-    "size": 18600976,
+    "versionName": "2.0.0",
+    "versionCode": 20,
+    "date": "2026-10-13",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.0.0/arc-tv-android-2.0.0.apk",
+    "sha256": "6895b3e13d8cd3970fd309d9bf8f0a8a4e5a8da881a7504a8d54037838ffc12c",
+    "size": 19043340,
     "minSdk": 26,
-    "notes": "Casting live TV to a Samsung TV over DLNA no longer shows \"The TV refused the request\" while the picture plays: refused position checks are ignored, Play is retried while the TV loads, and the log names any refused action."
+    "notes": "Arc TV 2.0 for Android (early access): Browse by genre with an optional library index, the same new backup file as the Mac (optional passphrase for passwords and your TMDB key), an optional sync folder (Settings → Sync), Up Next, sleep timer, channel schedule, adult-content PIN and accessibility improvements. Updates in place."
   },
   "versions": [
+    {
+      "versionName": "2.0.0",
+      "versionCode": 20,
+      "date": "2026-10-13",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.0.0/arc-tv-android-2.0.0.apk",
+      "sha256": "6895b3e13d8cd3970fd309d9bf8f0a8a4e5a8da881a7504a8d54037838ffc12c",
+      "size": 19043340,
+      "minSdk": 26,
+      "notes": "Arc TV 2.0 for Android (early access): Browse by genre with an optional library index, the same new backup file as the Mac (optional passphrase for passwords and your TMDB key), an optional sync folder (Settings → Sync), Up Next, sleep timer, channel schedule, adult-content PIN and accessibility improvements. Updates in place."
+    },
     {
       "versionName": "0.1.18",
       "versionCode": 19,
