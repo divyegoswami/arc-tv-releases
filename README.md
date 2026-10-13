@@ -41,8 +41,10 @@ Releases are tagged by platform: Mac `v<version>`, Android `android-<version>`, 
 
 ### Mac
 
-Open the `.dmg` and drag **Arc TV** to Applications. The app isn't notarized by Apple, so if macOS says it is damaged,
-right-click it and choose **Open**. After that it updates itself: **Settings → About and data** finds the update, then
+Open the `.dmg` and drag **Arc TV** to Applications. The app isn't notarized by Apple, so macOS may say it is damaged and offer only
+**Move to Trash**. If so, keep the app in Applications and run `xattr -cr "/Applications/Arc TV.app"` in Terminal, then open it
+again. Choose the **arm64** download on an M-series Mac (such as an M4 Mac mini) and **x64** on an Intel Mac.
+After that it updates itself: **Settings → About and data** finds the update, then
 choose **Download** and **Restart to update**. Arc TV must be in your Applications folder to update itself.
 
 ### Android
