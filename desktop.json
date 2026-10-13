@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.0.2",
+    "version": "2.1.0",
     "date": "2026-10-13",
-    "notes": "# Arc TV 2.0.2 for Mac\n\n2.0.2 lets a backup carry your catalogue index, so a second Mac does not have to walk your portal again.\n\n## What is new\n\n- **Include the catalogue index in a backup.** When you export, tick **Include the catalogue index**. It adds your portal's title list: names, categories, years and the portal's own ratings. When another Mac restores the file, it skips the hours-long catalogue walk, and the match decisions in the backup apply to those titles straight away.\n- **No TMDB data in the file.** The catalogue index holds only what your portal itself reports. TMDB details are fetched again on the new Mac with its own key, so nothing from TMDB is copied between devices.\n- **Off by default.** A large portal can add tens of megabytes to the file, so nothing is added unless you tick the box. It works with or without a passphrase.\n- **Clear feedback on restore.** The restore screen lists the catalogue index with the other contents, and the result says how many titles were restored.\n\n## What did not change\n\n- Existing backups restore exactly as before, and the phones simply ignore the new section.\n- Your data and settings are untouched.\n- Pick the **arm64** download on…",
+    "notes": "# Arc TV 2.1.0 for Mac\n\n2.1.0 makes the Mac app simpler: one button builds your library, and Settings is cleaner.\n\n## What is new\n\n- **One button builds your library.** In **Settings → Library**, **Build my library** reads your source's titles and matches them on TMDB, then keeps going on its own. You see one progress line, with Pause, Stop and Delete. It asks for your OK once, in plain words. If TMDB is off, Arc TV tells you what to do in one line. After you restore a backup, Arc TV offers the same button, so Home can look like it does on your other Mac.\n- **Six calmer Settings pages.** General, Playback, Library, Home, Data and About. Remote Control now sits in General, TV Guide in Library, and Backup, Sync and Reset together in Data. Each row has a short name and one short line of help. Rarely used options are under one **Advanced** section per page.\n- **No licence screen in the app.** Licences and credits now live in the README, under \"Legal and credits\". The app still carries the MIT licence file inside it, and shows one small TMDB credit line, as TMDB requires.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings values are untouched. Old Settin…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.2/arc-tv-2.0.2-mac-arm64.zip",
-        "sha256": "7260a28a5fa89eb0a1748da41ea28988ef0117ece08389cd3f65ed63a5ef3177",
-        "size": 163886222
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.2/arc-tv-2.0.2-mac-x64.zip",
-        "sha256": "0379e17ffecc05574d13a976bf38a0f9925b496aed790f241f5db29fb97da53b",
-        "size": 168719925
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-arm64.zip",
+        "sha256": "cc4f6ba794bcbf60f3841494787fec7eb9ec2b15a9ee5b5114fe30a5f600906f",
+        "size": 165926078
       }
     }
   },
   "versions": [
+    {
+      "version": "2.1.0",
+      "date": "2026-10-13",
+      "notes": "# Arc TV 2.1.0 for Mac\n\n2.1.0 makes the Mac app simpler: one button builds your library, and Settings is cleaner.\n\n## What is new\n\n- **One button builds your library.** In **Settings → Library**, **Build my library** reads your source's titles and matches them on TMDB, then keeps going on its own. You see one progress line, with Pause, Stop and Delete. It asks for your OK once, in plain words. If TMDB is off, Arc TV tells you what to do in one line. After you restore a backup, Arc TV offers the same button, so Home can look like it does on your other Mac.\n- **Six calmer Settings pages.** General, Playback, Library, Home, Data and About. Remote Control now sits in General, TV Guide in Library, and Backup, Sync and Reset together in Data. Each row has a short name and one short line of help. Rarely used options are under one **Advanced** section per page.\n- **No licence screen in the app.** Licences and credits now live in the README, under \"Legal and credits\". The app still carries the MIT licence file inside it, and shows one small TMDB credit line, as TMDB requires.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings values are untouched. Old Settin…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-arm64.zip",
+          "sha256": "cc4f6ba794bcbf60f3841494787fec7eb9ec2b15a9ee5b5114fe30a5f600906f",
+          "size": 165926078
+        }
+      }
+    },
     {
       "version": "2.0.2",
       "date": "2026-10-13",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-x64.zip",
           "sha256": "1b1da241bce3f7094018b42c8498dc86a508fa5d69a57a25b652f24bd54d1639",
           "size": 166913135
-        }
-      }
-    },
-    {
-      "version": "1.1.1",
-      "date": "2026-10-08",
-      "notes": "Fixes: series that your portal lists inside its movie section now open with their seasons and episodes from the Series section, and category lists no longer show a meaningless dash pill. Also includes 1.1.0: Stalker-only app (Xtream and M3U removed) and no more Windows builds.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.1/arc-tv-1.1.1-mac-arm64.zip",
-          "sha256": "0ba380f1ed5b57120b5a4583260af83364823677fcac40473c504bd6d595b501",
-          "size": 164789423
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.1/arc-tv-1.1.1-mac-x64.zip",
-          "sha256": "63e8d4ed9d8de3f957ebd0ef16b78e5c9f95ad18d593f0cded59af59038543b6",
-          "size": 166915662
         }
       }
     }
