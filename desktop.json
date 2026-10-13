@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "1.4.8",
-    "date": "2026-10-11",
-    "notes": "The phone remote's More menu works again: Search, Speed, Sleep timer, Full screen, Subtitles and the other tiles now respond to taps while a title is playing. After updating, reload the remote shortcut on your phone once.",
+    "version": "2.0.0",
+    "date": "2026-10-13",
+    "notes": "## What's new in Arc TV 2.0\n\nArc TV 2.0 helps you find something to watch, and makes your data safe to move. The Mac app gains a Browse page by\ngenre, an optional library index, better suggestions, stronger backups and an optional sync folder. Android and iPhone\ngain Browse by genre with the optional library index, Up Next, a sleep timer, a channel schedule, an adult-content PIN, the same new backup file as the Mac and an optional sync folder. Android and iPhone are in early access, and the Mac is the main app.\n\nArc TV is a player, not a TV service. It includes no channels, movies or playlists. Your portals, history and settings\nstay on your devices. TMDB, the library index and sync are off until you switch them on.\n\n## Mac\n\n- **Browse by genre.** Open Browse in the sidebar, pick a source, choose Movies or Series, and filter by genre, decade,\n  rating and language. Sort by top rated, newest, title or recently added. It lists matched titles that have details in\n  your library index.\n- **Library index (optional).** Genres, year, rating and runtime for your matched titles, fetched with your own TMDB key\n  and kept only on this Mac. It runs slowly, only while the app is idle, and you…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-arm64.zip",
-        "sha256": "ec15a7c742579a20e3a14d1f6816f38935827966f748ef95a3da65e0b812dd14",
-        "size": 164682481
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-x64.zip",
-        "sha256": "1806f2b56bc51193ca23f95a49337d692ed67dfa22ab87657c8181d9c91fa278",
-        "size": 166808720
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-arm64.zip",
+        "sha256": "73424a4d2b159d96f29630531794047481efff00751db31d6b81ec6f01004bc0",
+        "size": 164955608
       }
     }
   },
   "versions": [
+    {
+      "version": "2.0.0",
+      "date": "2026-10-13",
+      "notes": "## What's new in Arc TV 2.0\n\nArc TV 2.0 helps you find something to watch, and makes your data safe to move. The Mac app gains a Browse page by\ngenre, an optional library index, better suggestions, stronger backups and an optional sync folder. Android and iPhone\ngain Browse by genre with the optional library index, Up Next, a sleep timer, a channel schedule, an adult-content PIN, the same new backup file as the Mac and an optional sync folder. Android and iPhone are in early access, and the Mac is the main app.\n\nArc TV is a player, not a TV service. It includes no channels, movies or playlists. Your portals, history and settings\nstay on your devices. TMDB, the library index and sync are off until you switch them on.\n\n## Mac\n\n- **Browse by genre.** Open Browse in the sidebar, pick a source, choose Movies or Series, and filter by genre, decade,\n  rating and language. Sort by top rated, newest, title or recently added. It lists matched titles that have details in\n  your library index.\n- **Library index (optional).** Genres, year, rating and runtime for your matched titles, fetched with your own TMDB key\n  and kept only on this Mac. It runs slowly, only while the app is idle, and you…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-arm64.zip",
+          "sha256": "73424a4d2b159d96f29630531794047481efff00751db31d6b81ec6f01004bc0",
+          "size": 164955608
+        }
+      }
+    },
     {
       "version": "1.4.8",
       "date": "2026-10-11",
