@@ -11,6 +11,11 @@
         "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-arm64.zip",
         "sha256": "73424a4d2b159d96f29630531794047481efff00751db31d6b81ec6f01004bc0",
         "size": 164955608
+      },
+      "x64": {
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-x64.zip",
+        "sha256": "7165c22d3cd086f04bab2fc0fa47c6eddb2ade4d3f82d8f3aee6ce70b910e6f0",
+        "size": 167081847
       }
     }
   },
@@ -25,6 +30,11 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-arm64.zip",
           "sha256": "73424a4d2b159d96f29630531794047481efff00751db31d6b81ec6f01004bc0",
           "size": 164955608
+        },
+        "x64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-x64.zip",
+          "sha256": "7165c22d3cd086f04bab2fc0fa47c6eddb2ade4d3f82d8f3aee6ce70b910e6f0",
+          "size": 167081847
         }
       }
     },
