@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.1.0",
-    "date": "2026-10-13",
-    "notes": "# Arc TV 2.1.0 for Mac\n\n2.1.0 makes the Mac app simpler: one button builds your library, and Settings is cleaner.\n\n## What is new\n\n- **One button builds your library.** In **Settings → Library**, **Build my library** reads your source's titles and matches them on TMDB, then keeps going on its own. You see one progress line, with Pause, Stop and Delete. It asks for your OK once, in plain words. If TMDB is off, Arc TV tells you what to do in one line. After you restore a backup, Arc TV offers the same button, so Home can look like it does on your other Mac.\n- **Six calmer Settings pages.** General, Playback, Library, Home, Data and About. Remote Control now sits in General, TV Guide in Library, and Backup, Sync and Reset together in Data. Each row has a short name and one short line of help. Rarely used options are under one **Advanced** section per page.\n- **No licence screen in the app.** Licences and credits now live in the README, under \"Legal and credits\". The app still carries the MIT licence file inside it, and shows one small TMDB credit line, as TMDB requires.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings values are untouched. Old Settin…",
+    "version": "2.2.0",
+    "date": "2026-10-14",
+    "notes": "# Arc TV 2.2.0 for Mac\n\n2.2.0 lets you keep watching while you browse, and makes building your library show results sooner.\n\n## What is new\n\n- **Keep watching while you browse.** Start a movie, episode or channel, then go back to look for something else. The video moves to a small floating window and keeps playing, so you can browse Home, Movies, Series, Live, Search and Settings without stopping it. Use the window's own back button, or **Return** in Arc TV, to go back to the full player at the same spot. Close it, or press **Stop**, to end playback. Starting something else replaces it, so there is only ever one video. You can turn this off in **Settings → Playback**.\n- **Library results show up sooner.** **Build my library** now matches titles on TMDB while it is still reading them, so \"matched\" starts to rise early instead of staying at 0 until every title has been read. The status line says what it is doing.\n- **One place for each setting.** The older duplicate indexing and details panels in Library are gone, and Sync stays only on Data. If you started the old indexing before, its progress shows in **My library**.\n\n## What did not change\n\n- Your sources, favourites, history, ba…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-arm64.zip",
-        "sha256": "cc4f6ba794bcbf60f3841494787fec7eb9ec2b15a9ee5b5114fe30a5f600906f",
-        "size": 165926078
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-x64.zip",
-        "sha256": "08ff9dc710001f952deabbae6d2b5b293457de7c916d9e67312ffe2980759f66",
-        "size": 170759786
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.0/arc-tv-2.2.0-mac-arm64.zip",
+        "sha256": "175418a015609e9b01f74e36eccff12bfcaf593bb1d43f76822a053a0ea0b609",
+        "size": 165926989
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.0",
+      "date": "2026-10-14",
+      "notes": "# Arc TV 2.2.0 for Mac\n\n2.2.0 lets you keep watching while you browse, and makes building your library show results sooner.\n\n## What is new\n\n- **Keep watching while you browse.** Start a movie, episode or channel, then go back to look for something else. The video moves to a small floating window and keeps playing, so you can browse Home, Movies, Series, Live, Search and Settings without stopping it. Use the window's own back button, or **Return** in Arc TV, to go back to the full player at the same spot. Close it, or press **Stop**, to end playback. Starting something else replaces it, so there is only ever one video. You can turn this off in **Settings → Playback**.\n- **Library results show up sooner.** **Build my library** now matches titles on TMDB while it is still reading them, so \"matched\" starts to rise early instead of staying at 0 until every title has been read. The status line says what it is doing.\n- **One place for each setting.** The older duplicate indexing and details panels in Library are gone, and Sync stays only on Data. If you started the old indexing before, its progress shows in **My library**.\n\n## What did not change\n\n- Your sources, favourites, history, ba…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.0/arc-tv-2.2.0-mac-arm64.zip",
+          "sha256": "175418a015609e9b01f74e36eccff12bfcaf593bb1d43f76822a053a0ea0b609",
+          "size": 165926989
+        }
+      }
+    },
     {
       "version": "2.1.0",
       "date": "2026-10-13",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.3/arc-tv-1.1.3-mac-x64.zip",
           "sha256": "5c7ec7b79598bb7c77f6382a413da1e863f05c27d94ead0b01387ed0b8615e94",
           "size": 166914925
-        }
-      }
-    },
-    {
-      "version": "1.1.2",
-      "date": "2026-10-08",
-      "notes": "Fix: opening a show from Continue watching now loads its seasons and episodes (shows your portal lists inside its movie section). Includes 1.1.1 and 1.1.0 changes: Stalker-only app, no Windows builds.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-arm64.zip",
-          "sha256": "8263e50916dd7ccc4384615d8e88b80ff6f21163458c123eebba31015468e386",
-          "size": 164786896
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.1.2/arc-tv-1.1.2-mac-x64.zip",
-          "sha256": "1b1da241bce3f7094018b42c8498dc86a508fa5d69a57a25b652f24bd54d1639",
-          "size": 166913135
         }
       }
     }
