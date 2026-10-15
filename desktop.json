@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.6",
+    "version": "2.2.7",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.6 for Mac\n\n2.2.6 makes Arc TV English only and a good deal smaller.\n\n## What is new\n\n- **English only.** The app language setting is gone, and the other 18 languages were removed, about 3 MB of translation files. If you had another language saved, Arc TV opens in English and nothing else in your settings changes. Old backups that mention a language still restore.\n- **Content-language choices stay.** The language choices for movie and show titles in your library and recommendations are not affected.\n\n## Under the hood\n\n- Removed the translation checking and filling tools, and fixed an outdated logo test.\n\n## What did not change\n\n- Your sources, favourites, history, backups and other Settings are untouched.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+    "notes": "# Arc TV 2.2.7 for Mac\n\n2.2.7 adds an optional way to match your library much faster.\n\n## What is new\n\n- **Faster matching (optional, off by default).** In Settings, next to the IMDb ratings download, you can now download IMDb's free title list. It shows the download size before you confirm, and you can remove it at any time. With it, most titles match on your Mac straight away, without asking the web for each one. TMDB and TVmaze are still used for anything the list misses.\n- **Titles without a year can match too**, but only when the name and type point to exactly one title. Anything unsure is left for TMDB or for you to review.\n- **Wikidata is used only when you fix a match by hand.** It cannot answer fast enough for a whole library, so it no longer takes part in builds.\n\n## Good to know\n\n- The IMDb list is IMDb's non-commercial dataset. Arc TV downloads it to your own Mac only when you ask, and never bundles or shares it. It is kept small by leaving out rarely rated titles.\n- Your sources, favourites, history, backups and Settings are untouched. If you never turn the new option on, nothing changes.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.6/arc-tv-2.2.6-mac-arm64.zip",
-        "sha256": "8acd05a22d1b567533274f8773b6243d470d3503ef3aeb6fb3140f71110f60f2",
-        "size": 164470141
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.6/arc-tv-2.2.6-mac-x64.zip",
-        "sha256": "a765d1f4515fb45de27d534679b5b4b92cc67837422a17503bd62f6832c56ca6",
-        "size": 169303850
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.7/arc-tv-2.2.7-mac-arm64.zip",
+        "sha256": "ee4eca0e2c9685a975348d8518e47e4bf3f4ee0c60ca534b7ed82335eeff81d7",
+        "size": 164480980
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.7",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.7 for Mac\n\n2.2.7 adds an optional way to match your library much faster.\n\n## What is new\n\n- **Faster matching (optional, off by default).** In Settings, next to the IMDb ratings download, you can now download IMDb's free title list. It shows the download size before you confirm, and you can remove it at any time. With it, most titles match on your Mac straight away, without asking the web for each one. TMDB and TVmaze are still used for anything the list misses.\n- **Titles without a year can match too**, but only when the name and type point to exactly one title. Anything unsure is left for TMDB or for you to review.\n- **Wikidata is used only when you fix a match by hand.** It cannot answer fast enough for a whole library, so it no longer takes part in builds.\n\n## Good to know\n\n- The IMDb list is IMDb's non-commercial dataset. Arc TV downloads it to your own Mac only when you ask, and never bundles or shares it. It is kept small by leaving out rarely rated titles.\n- Your sources, favourites, history, backups and Settings are untouched. If you never turn the new option on, nothing changes.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.7/arc-tv-2.2.7-mac-arm64.zip",
+          "sha256": "ee4eca0e2c9685a975348d8518e47e4bf3f4ee0c60ca534b7ed82335eeff81d7",
+          "size": 164480980
+        }
+      }
+    },
     {
       "version": "2.2.6",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-x64.zip",
           "sha256": "7a9c1c21846d1b1206657a45caa6c3b3986787f2c8c01c2d38a300a4098a4b61",
           "size": 166779914
-        }
-      }
-    },
-    {
-      "version": "1.4.0",
-      "date": "2026-10-09",
-      "notes": "## What's new\n\n- **One player, built in.** MPV, VLC and the experimental Embedded MPV player are gone. Live TV, movies and series now play in the built-in player (HTML5, Video.js or Art Player). If you had chosen an external player, Arc TV switches you to the default built-in one automatically.\n- **Subtitles the Apple TV way.** Clean white text with a soft shadow and no box behind it, in the system font.\n- **Live recording is removed**, together with its settings and the record button. Files you already recorded stay on disk, untouched.\n- **Smaller download.** Installers no longer bundle the libmpv/FFmpeg runtime.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-arm64.zip",
-          "sha256": "8733de2c56cc4aeb82a13498c50b8d8f1f872d5ec21a9465959ec819961699b9",
-          "size": 164652214
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-x64.zip",
-          "sha256": "862279348161c67ca79206710227d8ab2a90e530d1080248d148c6962d6ab41e",
-          "size": 166778453
         }
       }
     }
