@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.3",
+    "version": "2.2.4",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.3 for Mac\n\n2.2.3 gives subtitles a cleaner, smaller look.\n\n## What is new\n\n- **A compact subtitle box.** Subtitles now sit in one small, dark, see-through box that hugs the text, with white system text. It covers much less of the picture than before. It looks the same in all three players.\n- **Smarter placement.** Subtitles stay just above the controls when they are showing and drop lower when the controls hide. Long lines wrap neatly and stay away from the edges.\n- **Scales with the player.** Text grows in fullscreen and follows your saved subtitle size.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings are untouched, including your subtitle size.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+    "notes": "# Arc TV 2.2.4 for Mac\n\n2.2.4 is a tidy-up release: clearer wording, a few small fixes, and a lot of old code removed.\n\n## What is new\n\n- **Add source has a proper title.** The dialog no longer shows a raw label where its name should be.\n- **Clearer Settings.** The backup export warns that a file with passwords lets anyone sign in as you. Restore says it replaces your current data. Delete-all and restore use the same word (\"sources\"). The Remote control row explains itself, and sync setup tells you why Continue is off.\n- **Updates reads naturally.** It offers \"Check for updates\" first and shows a plain verdict after a check.\n- **TMDB key check is clearer.** It now tells a refused key apart from a lost connection. If a check has just failed, \"Build my library\" waits until the key works.\n- **One source is picked for you.** If you only have one source, Arc TV selects it, and the sidebar says \"Select source\".\n- **Clearer backup message.** A backup made by a newer Arc TV tells you to update before restoring it.\n\n## Under the hood\n\n- Removed a large amount of old Xtream, Linux and Snap code that Arc TV no longer uses. This does not change how the app behaves.\n\n## What did not change\n\n-…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.3/arc-tv-2.2.3-mac-arm64.zip",
-        "sha256": "5de60a75cb738476ad26d91e2ff8e89c473bc762a81ad73b2a2faae4b530b91c",
-        "size": 165928330
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.3/arc-tv-2.2.3-mac-x64.zip",
-        "sha256": "67b58d1c8f84ba32defdb66dc55852ffcbda17416c5de9f27c2ef102b9ddb85e",
-        "size": 170762035
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.4/arc-tv-2.2.4-mac-arm64.zip",
+        "sha256": "75e6e43350b372ccdbdb34b729fc17dcc4cb1cf3a8f90c57c6a48b5e0d959056",
+        "size": 165900897
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.4",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.4 for Mac\n\n2.2.4 is a tidy-up release: clearer wording, a few small fixes, and a lot of old code removed.\n\n## What is new\n\n- **Add source has a proper title.** The dialog no longer shows a raw label where its name should be.\n- **Clearer Settings.** The backup export warns that a file with passwords lets anyone sign in as you. Restore says it replaces your current data. Delete-all and restore use the same word (\"sources\"). The Remote control row explains itself, and sync setup tells you why Continue is off.\n- **Updates reads naturally.** It offers \"Check for updates\" first and shows a plain verdict after a check.\n- **TMDB key check is clearer.** It now tells a refused key apart from a lost connection. If a check has just failed, \"Build my library\" waits until the key works.\n- **One source is picked for you.** If you only have one source, Arc TV selects it, and the sidebar says \"Select source\".\n- **Clearer backup message.** A backup made by a newer Arc TV tells you to update before restoring it.\n\n## Under the hood\n\n- Removed a large amount of old Xtream, Linux and Snap code that Arc TV no longer uses. This does not change how the app behaves.\n\n## What did not change\n\n-…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.4/arc-tv-2.2.4-mac-arm64.zip",
+          "sha256": "75e6e43350b372ccdbdb34b729fc17dcc4cb1cf3a8f90c57c6a48b5e0d959056",
+          "size": 165900897
+        }
+      }
+    },
     {
       "version": "2.2.3",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.2/arc-tv-1.2.2-mac-x64.zip",
           "sha256": "205fde25c4d873d74cd6951358c9daf887d1e7e24643d435d070262c3b061c30",
           "size": 166974268
-        }
-      }
-    },
-    {
-      "version": "1.2.1",
-      "date": "2026-10-08",
-      "notes": "Phone remote polish: the D-pad and Back are no longer stuck while a notification is showing, the first arrow press starts in the main content, the seek bar stays where you drop it, play/pause shows Buffering while the video is loading, and typed text with accents or emoji arrives intact.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.1/arc-tv-1.2.1-mac-arm64.zip",
-          "sha256": "accfcf4b63436847216e13a4012d4db4655023554e1b78fbd97a9caa3426bb5e",
-          "size": 164806194
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.1/arc-tv-1.2.1-mac-x64.zip",
-          "sha256": "adae2fec35d1f4d02602a216ecf4b36087b8b59d8cdb200b6b971901153cd11c",
-          "size": 166932433
         }
       }
     }
