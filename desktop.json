@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.2",
+    "version": "2.2.3",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.2 for Mac\n\n2.2.2 fixes a blurred, empty player and an off-centre setup card.\n\n## What is fixed\n\n- **The video is visible again.** With Picture in Picture support on, movies, episodes and live TV could play (you heard the sound) while the picture was missing and only a blurred poster showed. The picture now fills the player, with all three players (the default, Video.js and ArtPlayer).\n- **The setup card is centred.** On an empty Home or Sources page, the \"connect your portal\" card sat to one side. It is now in the middle.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings are untouched.\n- Picture in Picture while browsing works as in 2.2.0.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+    "notes": "# Arc TV 2.2.3 for Mac\n\n2.2.3 gives subtitles a cleaner, smaller look.\n\n## What is new\n\n- **A compact subtitle box.** Subtitles now sit in one small, dark, see-through box that hugs the text, with white system text. It covers much less of the picture than before. It looks the same in all three players.\n- **Smarter placement.** Subtitles stay just above the controls when they are showing and drop lower when the controls hide. Long lines wrap neatly and stay away from the edges.\n- **Scales with the player.** Text grows in fullscreen and follows your saved subtitle size.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings are untouched, including your subtitle size.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.2/arc-tv-2.2.2-mac-arm64.zip",
-        "sha256": "1ac0a2555d78c808b2b540d5cd00e7d814932bf47e8dfc236d53e3c3c37e839d",
-        "size": 165927526
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.2/arc-tv-2.2.2-mac-x64.zip",
-        "sha256": "5e3c48d61025f579caa88a6966699d910c3e3ca712aa5715f3f6e2fd2c876211",
-        "size": 170761233
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.3/arc-tv-2.2.3-mac-arm64.zip",
+        "sha256": "5de60a75cb738476ad26d91e2ff8e89c473bc762a81ad73b2a2faae4b530b91c",
+        "size": 165928330
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.3",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.3 for Mac\n\n2.2.3 gives subtitles a cleaner, smaller look.\n\n## What is new\n\n- **A compact subtitle box.** Subtitles now sit in one small, dark, see-through box that hugs the text, with white system text. It covers much less of the picture than before. It looks the same in all three players.\n- **Smarter placement.** Subtitles stay just above the controls when they are showing and drop lower when the controls hide. Long lines wrap neatly and stay away from the edges.\n- **Scales with the player.** Text grows in fullscreen and follows your saved subtitle size.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings are untouched, including your subtitle size.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.3/arc-tv-2.2.3-mac-arm64.zip",
+          "sha256": "5de60a75cb738476ad26d91e2ff8e89c473bc762a81ad73b2a2faae4b530b91c",
+          "size": 165928330
+        }
+      }
+    },
     {
       "version": "2.2.2",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.1/arc-tv-1.2.1-mac-x64.zip",
           "sha256": "adae2fec35d1f4d02602a216ecf4b36087b8b59d8cdb200b6b971901153cd11c",
           "size": 166932433
-        }
-      }
-    },
-    {
-      "version": "1.2.0",
-      "date": "2026-10-08",
-      "notes": "The phone remote is redesigned in Arc TV's glass look and now controls the whole app. Move around and open titles with a round click-pad, play, pause and seek movies and shows (10 seconds back or forward), change volume and episodes, and search with your phone's keyboard. Scan the QR code in Settings → Remote control once to pair; old bookmarked links need a rescan.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.0/arc-tv-1.2.0-mac-arm64.zip",
-          "sha256": "69bf90683b30ffa535c9a58b63bcb830c518f050515199b59603ceb3aad3e38b",
-          "size": 164807804
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.0/arc-tv-1.2.0-mac-x64.zip",
-          "sha256": "036f94ed3c02929278e11e073cb3fa1455571b2ca6d69c5fe0ba18230462a7f7",
-          "size": 166934043
         }
       }
     }
