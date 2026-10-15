@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.5",
+    "version": "2.2.6",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.5 for Mac\n\n2.2.5 makes Arc TV dark only and makes deleting data safer.\n\n## What is new\n\n- **Dark only.** Arc TV now always uses the dark look, and the first screen is black from the very first moment, with no white flash. The Theme setting is gone. If you had Light or System saved, it opens in dark and nothing else in your settings changes.\n- **Delete all data also removes downloads.** Videos and partial files that Arc TV downloaded are removed from your download folder. Only files Arc TV recorded, directly in your Downloads folder or the folder you chose, are touched, and nothing else on your Mac.\n- **No leftovers after deleting a source.** Deleting a source now also clears its catalogue entries, so a half-finished sync can no longer leave pieces behind.\n\n## What did not change\n\n- Your sources, favourites, history, backups and other Settings are untouched. Old backups that mention Light or System still restore.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+    "notes": "# Arc TV 2.2.6 for Mac\n\n2.2.6 makes Arc TV English only and a good deal smaller.\n\n## What is new\n\n- **English only.** The app language setting is gone, and the other 18 languages were removed, about 3 MB of translation files. If you had another language saved, Arc TV opens in English and nothing else in your settings changes. Old backups that mention a language still restore.\n- **Content-language choices stay.** The language choices for movie and show titles in your library and recommendations are not affected.\n\n## Under the hood\n\n- Removed the translation checking and filling tools, and fixed an outdated logo test.\n\n## What did not change\n\n- Your sources, favourites, history, backups and other Settings are untouched.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.5/arc-tv-2.2.5-mac-arm64.zip",
-        "sha256": "13723a83ab8638c45febd32be6772cf28a7cccd30aa1bf4b6322bb6f6657e8e9",
-        "size": 165899515
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.5/arc-tv-2.2.5-mac-x64.zip",
-        "sha256": "6ab49eb76157cdfce465d90e43c45b9fd1c1de23fda801336e2433ffa0e80df7",
-        "size": 170733220
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.6/arc-tv-2.2.6-mac-arm64.zip",
+        "sha256": "8acd05a22d1b567533274f8773b6243d470d3503ef3aeb6fb3140f71110f60f2",
+        "size": 164470141
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.6",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.6 for Mac\n\n2.2.6 makes Arc TV English only and a good deal smaller.\n\n## What is new\n\n- **English only.** The app language setting is gone, and the other 18 languages were removed, about 3 MB of translation files. If you had another language saved, Arc TV opens in English and nothing else in your settings changes. Old backups that mention a language still restore.\n- **Content-language choices stay.** The language choices for movie and show titles in your library and recommendations are not affected.\n\n## Under the hood\n\n- Removed the translation checking and filling tools, and fixed an outdated logo test.\n\n## What did not change\n\n- Your sources, favourites, history, backups and other Settings are untouched.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.6/arc-tv-2.2.6-mac-arm64.zip",
+          "sha256": "8acd05a22d1b567533274f8773b6243d470d3503ef3aeb6fb3140f71110f60f2",
+          "size": 164470141
+        }
+      }
+    },
     {
       "version": "2.2.5",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.0/arc-tv-1.4.0-mac-x64.zip",
           "sha256": "862279348161c67ca79206710227d8ab2a90e530d1080248d148c6962d6ab41e",
           "size": 166778453
-        }
-      }
-    },
-    {
-      "version": "1.3.0",
-      "date": "2026-10-09",
-      "notes": "Safer, calmer and roomier. Episodes have one big Play button and a ⋯ menu for Mark watched, Download and details; season downloads ask first and single downloads can be undone. Series and movie pages use the full width, the player header is cleaner, lists say Loading instead of 0 items, and Live TV channels without a logo show their initials. The phone remote shows what is selected, asks for a second OK on risky buttons, and has new Play and Episodes shortcuts.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-arm64.zip",
-          "sha256": "9f4f50c1bd7e53f07b134bab1ae19d8cc694ca3882b1f5a36af426a009388e55",
-          "size": 164864162
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-x64.zip",
-          "sha256": "903cd25a9e64c60e8cc59ea8e1ff3c769cf6bf70b12583a7c75dc0236532ccd6",
-          "size": 166990401
         }
       }
     }
