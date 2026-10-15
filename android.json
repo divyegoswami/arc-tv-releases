@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "2.0.1",
-    "versionCode": 21,
-    "date": "2026-10-13",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.0.1/arc-tv-android-2.0.1.apk",
-    "sha256": "db048f564fe5caf2a7864458133d31bfd7742b2bc4e156781cd57cdfe9fef513",
+    "versionName": "2.0.2",
+    "versionCode": 22,
+    "date": "2026-10-15",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.0.2/arc-tv-android-2.0.2.apk",
+    "sha256": "b0adfa96a1ec96fda4c7c44f825882cacff74c26cbcdbec09bfd427af258228b",
     "size": 19043344,
     "minSdk": 26,
-    "notes": "**What's new in 2.0.1**\n\n- **Choose how many titles the library index keeps:** 1,000, 5,000 (the default), 10,000, 25,000, 50,000 or 100,000. Pick it when you turn the index on, or later under *Title limit* in Settings → Library & details → Title details (TMDB) → Library index.\n- **Each choice shows how long a full run takes.** Raising the limit continues where the index stopped. Lowering it keeps the titles already stored; Delete index frees the space.\n- **Nothing changes unless you change it.** The default stays at 5,000 and the index stays off until you start it.\n\nThe Mac app stays on 2.0.0."
+    "notes": "# Arc TV 2.0.2 (Android and iPhone)\n\n2.0.2 is a small update for the phones.\n\n## What is new\n\n- **Restoring a Mac backup tells you about radio favorites.** The phones cannot play radio yet, so those favorites are skipped. The summary now says how many were skipped instead of dropping them silently.\n- **Series match better when the season comes first.** Titles like \"2 сезон\" or \"2nd Season\" before or after the name are now understood, and non-English letters are kept when searching.\n- **Plainer words.** \"Source\" instead of \"portal\" in setup, and one spelling of \"favorites\" everywhere.\n\n## What did not change\n\n- Your sources, favorites, history, backups, downloads and settings are untouched.\n- The Mac app is on 2.2.8."
   },
   "versions": [
+    {
+      "versionName": "2.0.2",
+      "versionCode": 22,
+      "date": "2026-10-15",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.0.2/arc-tv-android-2.0.2.apk",
+      "sha256": "b0adfa96a1ec96fda4c7c44f825882cacff74c26cbcdbec09bfd427af258228b",
+      "size": 19043344,
+      "minSdk": 26,
+      "notes": "# Arc TV 2.0.2 (Android and iPhone)\n\n2.0.2 is a small update for the phones.\n\n## What is new\n\n- **Restoring a Mac backup tells you about radio favorites.** The phones cannot play radio yet, so those favorites are skipped. The summary now says how many were skipped instead of dropping them silently.\n- **Series match better when the season comes first.** Titles like \"2 сезон\" or \"2nd Season\" before or after the name are now understood, and non-English letters are kept when searching.\n- **Plainer words.** \"Source\" instead of \"portal\" in setup, and one spelling of \"favorites\" everywhere.\n\n## What did not change\n\n- Your sources, favorites, history, backups, downloads and settings are untouched.\n- The Mac app is on 2.2.8."
+    },
     {
       "versionName": "2.0.1",
       "versionCode": 21,
