@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.7",
+    "version": "2.2.8",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.7 for Mac\n\n2.2.7 adds an optional way to match your library much faster.\n\n## What is new\n\n- **Faster matching (optional, off by default).** In Settings, next to the IMDb ratings download, you can now download IMDb's free title list. It shows the download size before you confirm, and you can remove it at any time. With it, most titles match on your Mac straight away, without asking the web for each one. TMDB and TVmaze are still used for anything the list misses.\n- **Titles without a year can match too**, but only when the name and type point to exactly one title. Anything unsure is left for TMDB or for you to review.\n- **Wikidata is used only when you fix a match by hand.** It cannot answer fast enough for a whole library, so it no longer takes part in builds.\n\n## Good to know\n\n- The IMDb list is IMDb's non-commercial dataset. Arc TV downloads it to your own Mac only when you ask, and never bundles or shares it. It is kept small by leaving out rarely rated titles.\n- Your sources, favourites, history, backups and Settings are untouched. If you never turn the new option on, nothing changes.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series…",
+    "notes": "# Arc TV 2.2.8 for Mac\n\n2.2.8 brings smarter suggestions, a friendlier first run, and a sturdier database.\n\n## What is new\n\n- **Better suggestions.** The same title in different qualities now shows up once. Suggestions only include things your source can actually play, with more variety in each row. Brand-new viewers get sensible suggestions from their favourites instead of an empty page. Titles that are not matched yet can still appear, a little lower. \"Not interested\" can still be undone.\n- **Clear setup card.** If Browse or For you needs TMDB or a built library, one card tells you what to do instead of dead tabs and filters.\n- **A friendlier first run.** Home tells you what to do next, a source that cannot be reached shows a clear warning with Retry and Remove, and the Add source dialog uses plain words. \"Source\" and \"favorites\" are used the same way everywhere.\n- **Easier to use.** Icon-only buttons have labels, and helper text and switches are easier to read in the dark theme.\n\n## Under the hood\n\n- Database writes retry briefly when the database is busy, so fewer actions fail under load. A failed library setup is recorded and Settings says so.\n- Movie and show details from TM…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.7/arc-tv-2.2.7-mac-arm64.zip",
-        "sha256": "ee4eca0e2c9685a975348d8518e47e4bf3f4ee0c60ca534b7ed82335eeff81d7",
-        "size": 164480980
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.7/arc-tv-2.2.7-mac-x64.zip",
-        "sha256": "c2706e6f33a8381e80b63ee08f46ae1bc014bca370ac8cf329d6f4d72dd7115a",
-        "size": 169314687
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.8/arc-tv-2.2.8-mac-arm64.zip",
+        "sha256": "a09f0a52cb287ab8c990540f89f97175166c99bf858f43e426323d11d313a670",
+        "size": 164482258
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.8",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.8 for Mac\n\n2.2.8 brings smarter suggestions, a friendlier first run, and a sturdier database.\n\n## What is new\n\n- **Better suggestions.** The same title in different qualities now shows up once. Suggestions only include things your source can actually play, with more variety in each row. Brand-new viewers get sensible suggestions from their favourites instead of an empty page. Titles that are not matched yet can still appear, a little lower. \"Not interested\" can still be undone.\n- **Clear setup card.** If Browse or For you needs TMDB or a built library, one card tells you what to do instead of dead tabs and filters.\n- **A friendlier first run.** Home tells you what to do next, a source that cannot be reached shows a clear warning with Retry and Remove, and the Add source dialog uses plain words. \"Source\" and \"favorites\" are used the same way everywhere.\n- **Easier to use.** Icon-only buttons have labels, and helper text and switches are easier to read in the dark theme.\n\n## Under the hood\n\n- Database writes retry briefly when the database is busy, so fewer actions fail under load. A failed library setup is recorded and Settings says so.\n- Movie and show details from TM…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.8/arc-tv-2.2.8-mac-arm64.zip",
+          "sha256": "a09f0a52cb287ab8c990540f89f97175166c99bf858f43e426323d11d313a670",
+          "size": 164482258
+        }
+      }
+    },
     {
       "version": "2.2.7",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-x64.zip",
           "sha256": "e154686ca06ea716a841c873e565d0436d12b05636ce1fdb5bb0e52397d3d904",
           "size": 166788434
-        }
-      }
-    },
-    {
-      "version": "1.4.1",
-      "date": "2026-10-09",
-      "notes": "## What's new\n\n- **Subtitles on frosted glass.** Captions sit on one slightly see-through dark panel with clean white text and no outline, and scale with the player. The subtitle colour choice is gone, so captions always read the same.\n- **Phone remote: Full screen, Subtitles and Audio.** While a video plays, the phone has a Full screen button and Subtitles and Audio buttons that show the current choice and step to the next one.\n- **Episode Play button** is a dark frosted disc instead of a white blob in dark mode.\n- **Smarter lists and settings.** Recent searches keep only what you opened. Empty Radio says \"stations\". Downloads no longer calls paused items \"Downloading now\" or shows a \"0 B\" total. Live TV initials skip tags like 4K. Settings drops the stale \"recording\" wording, shows the phone pairing QR straight away and says \"latest version\" once.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-arm64.zip",
-          "sha256": "1f6feeab93e1f35e621b383e093858ece7cde16dd4f2a63cbb63da68810f1791",
-          "size": 164653675
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.1/arc-tv-1.4.1-mac-x64.zip",
-          "sha256": "7a9c1c21846d1b1206657a45caa6c3b3986787f2c8c01c2d38a300a4098a4b61",
-          "size": 166779914
         }
       }
     }
