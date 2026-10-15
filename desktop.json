@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.4",
+    "version": "2.2.5",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.4 for Mac\n\n2.2.4 is a tidy-up release: clearer wording, a few small fixes, and a lot of old code removed.\n\n## What is new\n\n- **Add source has a proper title.** The dialog no longer shows a raw label where its name should be.\n- **Clearer Settings.** The backup export warns that a file with passwords lets anyone sign in as you. Restore says it replaces your current data. Delete-all and restore use the same word (\"sources\"). The Remote control row explains itself, and sync setup tells you why Continue is off.\n- **Updates reads naturally.** It offers \"Check for updates\" first and shows a plain verdict after a check.\n- **TMDB key check is clearer.** It now tells a refused key apart from a lost connection. If a check has just failed, \"Build my library\" waits until the key works.\n- **One source is picked for you.** If you only have one source, Arc TV selects it, and the sidebar says \"Select source\".\n- **Clearer backup message.** A backup made by a newer Arc TV tells you to update before restoring it.\n\n## Under the hood\n\n- Removed a large amount of old Xtream, Linux and Snap code that Arc TV no longer uses. This does not change how the app behaves.\n\n## What did not change\n\n-…",
+    "notes": "# Arc TV 2.2.5 for Mac\n\n2.2.5 makes Arc TV dark only and makes deleting data safer.\n\n## What is new\n\n- **Dark only.** Arc TV now always uses the dark look, and the first screen is black from the very first moment, with no white flash. The Theme setting is gone. If you had Light or System saved, it opens in dark and nothing else in your settings changes.\n- **Delete all data also removes downloads.** Videos and partial files that Arc TV downloaded are removed from your download folder. Only files Arc TV recorded, directly in your Downloads folder or the folder you chose, are touched, and nothing else on your Mac.\n- **No leftovers after deleting a source.** Deleting a source now also clears its catalogue entries, so a half-finished sync can no longer leave pieces behind.\n\n## What did not change\n\n- Your sources, favourites, history, backups and other Settings are untouched. Old backups that mention Light or System still restore.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.4/arc-tv-2.2.4-mac-arm64.zip",
-        "sha256": "75e6e43350b372ccdbdb34b729fc17dcc4cb1cf3a8f90c57c6a48b5e0d959056",
-        "size": 165900897
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.4/arc-tv-2.2.4-mac-x64.zip",
-        "sha256": "5b6bad9e55d4ee3725c321815f0ee35750365268719233f372073896068098bb",
-        "size": 170734609
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.5/arc-tv-2.2.5-mac-arm64.zip",
+        "sha256": "13723a83ab8638c45febd32be6772cf28a7cccd30aa1bf4b6322bb6f6657e8e9",
+        "size": 165899515
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.5",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.5 for Mac\n\n2.2.5 makes Arc TV dark only and makes deleting data safer.\n\n## What is new\n\n- **Dark only.** Arc TV now always uses the dark look, and the first screen is black from the very first moment, with no white flash. The Theme setting is gone. If you had Light or System saved, it opens in dark and nothing else in your settings changes.\n- **Delete all data also removes downloads.** Videos and partial files that Arc TV downloaded are removed from your download folder. Only files Arc TV recorded, directly in your Downloads folder or the folder you chose, are touched, and nothing else on your Mac.\n- **No leftovers after deleting a source.** Deleting a source now also clears its catalogue entries, so a half-finished sync can no longer leave pieces behind.\n\n## What did not change\n\n- Your sources, favourites, history, backups and other Settings are untouched. Old backups that mention Light or System still restore.\n- Android and iPhone stay on 2.0.1.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.5/arc-tv-2.2.5-mac-arm64.zip",
+          "sha256": "13723a83ab8638c45febd32be6772cf28a7cccd30aa1bf4b6322bb6f6657e8e9",
+          "size": 165899515
+        }
+      }
+    },
     {
       "version": "2.2.4",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.3.0/arc-tv-1.3.0-mac-x64.zip",
           "sha256": "903cd25a9e64c60e8cc59ea8e1ff3c769cf6bf70b12583a7c75dc0236532ccd6",
           "size": 166990401
-        }
-      }
-    },
-    {
-      "version": "1.2.2",
-      "date": "2026-10-09",
-      "notes": "The phone remote now works from your home screen. Add it to the home screen after pairing and the icon opens already paired, instead of asking for the QR code again. After Reset pairing, open the new QR link once and add the icon again.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.2/arc-tv-1.2.2-mac-arm64.zip",
-          "sha256": "e5065224ac5e1ec3f54b6670280fad33f65d78625e5f1f5d3df4f308b2654f2b",
-          "size": 164848029
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.2.2/arc-tv-1.2.2-mac-x64.zip",
-          "sha256": "205fde25c4d873d74cd6951358c9daf887d1e7e24643d435d070262c3b061c30",
-          "size": 166974268
         }
       }
     }
