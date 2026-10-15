@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.2.8",
+    "version": "2.2.9",
     "date": "2026-10-15",
-    "notes": "# Arc TV 2.2.8 for Mac\n\n2.2.8 brings smarter suggestions, a friendlier first run, and a sturdier database.\n\n## What is new\n\n- **Better suggestions.** The same title in different qualities now shows up once. Suggestions only include things your source can actually play, with more variety in each row. Brand-new viewers get sensible suggestions from their favourites instead of an empty page. Titles that are not matched yet can still appear, a little lower. \"Not interested\" can still be undone.\n- **Clear setup card.** If Browse or For you needs TMDB or a built library, one card tells you what to do instead of dead tabs and filters.\n- **A friendlier first run.** Home tells you what to do next, a source that cannot be reached shows a clear warning with Retry and Remove, and the Add source dialog uses plain words. \"Source\" and \"favorites\" are used the same way everywhere.\n- **Easier to use.** Icon-only buttons have labels, and helper text and switches are easier to read in the dark theme.\n\n## Under the hood\n\n- Database writes retry briefly when the database is busy, so fewer actions fail under load. A failed library setup is recorded and Settings says so.\n- Movie and show details from TM…",
+    "notes": "# Arc TV 2.2.9 for Mac\n\n2.2.9 fixes downloading a whole season.\n\n## What is fixed\n\n- **\"Download this season?\" now actually downloads.** After you confirmed, nothing was added to the download queue. Confirming now queues every episode of the season, and cancelling or closing the dialog queues nothing. The same fix applies to the season and series \"watched\" actions that use the same dialog.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings are untouched.\n- Android and iPhone are on 2.0.2.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.8/arc-tv-2.2.8-mac-arm64.zip",
-        "sha256": "a09f0a52cb287ab8c990540f89f97175166c99bf858f43e426323d11d313a670",
-        "size": 164482258
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.8/arc-tv-2.2.8-mac-x64.zip",
-        "sha256": "1b000099cfbc5bd3fd4023088515c51e60405f75355463138e4dfe8fbcbd0442",
-        "size": 169315973
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.9/arc-tv-2.2.9-mac-arm64.zip",
+        "sha256": "1376dcff5cad96bfbace3bb142fe49d86207752bcc396f0ff17c615693c0462e",
+        "size": 164484229
       }
     }
   },
   "versions": [
+    {
+      "version": "2.2.9",
+      "date": "2026-10-15",
+      "notes": "# Arc TV 2.2.9 for Mac\n\n2.2.9 fixes downloading a whole season.\n\n## What is fixed\n\n- **\"Download this season?\" now actually downloads.** After you confirmed, nothing was added to the download queue. Confirming now queues every episode of the season, and cancelling or closing the dialog queues nothing. The same fix applies to the season and series \"watched\" actions that use the same dialog.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings are untouched.\n- Android and iPhone are on 2.0.2.\n- Pick the **arm64** download on an M-series Mac and **x64** on an Intel Mac.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.9/arc-tv-2.2.9-mac-arm64.zip",
+          "sha256": "1376dcff5cad96bfbace3bb142fe49d86207752bcc396f0ff17c615693c0462e",
+          "size": 164484229
+        }
+      }
+    },
     {
       "version": "2.2.8",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.3/arc-tv-1.4.3-mac-x64.zip",
           "sha256": "3fb746cd2b774dfb38b338e245e7c3c53232ce6f616175ca3629668d39edff69",
           "size": 166787767
-        }
-      }
-    },
-    {
-      "version": "1.4.2",
-      "date": "2026-10-09",
-      "notes": "## What's new\n\n- **Simpler Settings.** Five short panes: General, Playback, Library, Phone remote, and About and data. Everything technical sits behind \"Show advanced settings\", and the TMDB key is hidden until you ask to see it.\n- **Easier Add playlist.** Just a name, the portal address and the MAC. Credentials, serial, device IDs and signatures are under More options.\n- **Cleaner Home.** Continue-watching tiles show one Play button and one small actions pill, keep their titles on hover, and use a single focus ring. The hero has three matching buttons on a dark scrim in both themes, and the hover backdrop now runs edge to edge.\n- **More Apple-like look.** Frosted menus, a soft sidebar selection, one scale for text sizes and corners, and import and export icons that point the right way.\n- **Fixes.** Recently Watched and Favorites no longer show a \"hidden list\" message when empty; failed category loads have a Retry button; the Guide shows channel initials with its shortcuts behind a ? button; download titles lose repeated episode codes and dates; Arc TV starts normally even if its phone-remote port is already in use.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-arm64.zip",
-          "sha256": "527d37e1eea30cb0f18b4c55c7226bf5b587d742e22861cffc2a071349e05f47",
-          "size": 164662195
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.2/arc-tv-1.4.2-mac-x64.zip",
-          "sha256": "e154686ca06ea716a841c873e565d0436d12b05636ce1fdb5bb0e52397d3d904",
-          "size": 166788434
         }
       }
     }
