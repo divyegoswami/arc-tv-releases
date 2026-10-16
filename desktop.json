@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.3.0",
-    "date": "2026-10-15",
-    "notes": "# Arc TV 2.3.0 for Mac\n\n2.3.0 adds an experimental way to find English subtitles, and Mac files are now named Arc TV.\n\n## What is new\n\n- **Experimental English subtitles (off by default).** If your source has no English subtitles, you can look some up from SubDL while you watch. Turn it on in **Settings → Playback → Experimental subtitles** and paste your own SubDL key (a free account at subdl.com). Use **Test key** to check it, and **Remove key** to turn it off and clear it.\n- **How it works.** In the subtitle menu, choose to look up English subtitles. Arc TV searches by the title, year and, for episodes, the season and episode. You choose the release, and it loads like any other subtitle in all three players. Nothing is searched in the background, and nothing slows playback down.\n- **Private by design.** Only the title, year and episode numbers are sent to SubDL. Your video, source address and stream links never leave your Mac. The key is never saved in ordinary backups or sync; it is only included if you choose encrypted backup secrets.\n- **Files are named Arc TV.** Downloads now read `arc-tv-…` instead of `iptvnator-…`. Your data and settings are not affected.\n\n## Good to know…",
+    "version": "2.3.1",
+    "date": "2026-10-16",
+    "notes": "# Arc TV 2.3.1 for Mac\n\n2.3.1 improves using Arc TV from a paired phone or a remote control.\n\n## What is new\n\n- **Clearer remote navigation.** Larger controls, steadier focus, clearer Back feedback and access to Home during playback make browsing easier from the sofa.\n- **Playback choices on your phone.** Choose subtitles, audio, playback speed and the sleep timer directly. Experimental English subtitle search is easier to use, including when a video has no built-in subtitles.\n- **Edit fields from your phone.** Enter settings and API keys through dedicated editors, with private values kept hidden.\n- **Companion file tools.** Upload a selected backup or subtitle file, download an exported backup to your phone, and choose Mac folders for downloads and sync through the paired connection. Files are limited to 64 MiB; including backup secrets still requires passphrase encryption.\n- **Better feedback.** Long subtitle names fit smaller phone screens, and playback errors offer a clear retry action.\n\n## Good to know\n\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- Android and iPhone apps remain on 2.0.2.\n- The Mac app is sealed with an ad-hoc signature and is not notari…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.3.0/arc-tv-2.3.0-mac-arm64.zip",
-        "sha256": "d9880eba74685759575a9dcdc3be73c83e0759eae912e9b4ea9516e9a7eb7a59",
-        "size": 164489132
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.3.0/arc-tv-2.3.0-mac-x64.zip",
-        "sha256": "b9623f78c683d823bdbaebf492faa536235a8d370dc50226ebd2cfe9400643a8",
-        "size": 169322850
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.3.1/arc-tv-2.3.1-mac-arm64.zip",
+        "sha256": "8088a98a27db11a3480bf7092bbbdce2b57b1d57b8b50d6c6db9efc79cbbffd6",
+        "size": 164516419
       }
     }
   },
   "versions": [
+    {
+      "version": "2.3.1",
+      "date": "2026-10-16",
+      "notes": "# Arc TV 2.3.1 for Mac\n\n2.3.1 improves using Arc TV from a paired phone or a remote control.\n\n## What is new\n\n- **Clearer remote navigation.** Larger controls, steadier focus, clearer Back feedback and access to Home during playback make browsing easier from the sofa.\n- **Playback choices on your phone.** Choose subtitles, audio, playback speed and the sleep timer directly. Experimental English subtitle search is easier to use, including when a video has no built-in subtitles.\n- **Edit fields from your phone.** Enter settings and API keys through dedicated editors, with private values kept hidden.\n- **Companion file tools.** Upload a selected backup or subtitle file, download an exported backup to your phone, and choose Mac folders for downloads and sync through the paired connection. Files are limited to 64 MiB; including backup secrets still requires passphrase encryption.\n- **Better feedback.** Long subtitle names fit smaller phone screens, and playback errors offer a clear retry action.\n\n## Good to know\n\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- Android and iPhone apps remain on 2.0.2.\n- The Mac app is sealed with an ad-hoc signature and is not notari…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.3.1/arc-tv-2.3.1-mac-arm64.zip",
+          "sha256": "8088a98a27db11a3480bf7092bbbdce2b57b1d57b8b50d6c6db9efc79cbbffd6",
+          "size": 164516419
+        }
+      }
+    },
     {
       "version": "2.3.0",
       "date": "2026-10-15",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.5/arc-tv-1.4.5-mac-x64.zip",
           "sha256": "5c14240d43da7cb9d6e62a7ee7274212419326d3cc41ed840544b7c988aa5f2a",
           "size": 166800500
-        }
-      }
-    },
-    {
-      "version": "1.4.4",
-      "date": "2026-10-10",
-      "notes": "**Phone remote and player:** the arrow keys on your phone now steer the player's own controls, so you can set playback speed and the sleep timer (OK opens a menu, arrows choose, Back closes it). Trailers open from a \"Play trailer\" card the remote can press, and the phone gains Trailer and Controls buttons.\n\n**Subtitles:** captions now sit centred at the bottom edge of the player, a little lower than before, and their panel is more see-through. They lift above the controls only while the controls are showing.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.4/arc-tv-1.4.4-mac-arm64.zip",
-          "sha256": "4cc400bd1dbff00fbdacd93eb4fcef5398a9a01ea47431aa227b5bfb10c74754",
-          "size": 164669711
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.4/arc-tv-1.4.4-mac-x64.zip",
-          "sha256": "e66f3e0ca9ae1cd8f7cfd649f4a58486af7e3a6242b517c6c4223a6ef1598d4b",
-          "size": 166795950
         }
       }
     }
