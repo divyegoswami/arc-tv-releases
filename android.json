@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "2.5.1",
-    "versionCode": 24,
+    "versionName": "2.5.2",
+    "versionCode": 25,
     "date": "2026-10-19",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.1/arc-tv-android-2.5.1.apk",
-    "sha256": "35e54604c8831a83eda62356f3429be328a594cc8153ce54e124acfdf02b1dbc",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.2/arc-tv-android-2.5.2.apk",
+    "sha256": "2002978095199ddbfa617c8e982754953dd08479e5e062ae46c2c26457f45816",
     "size": 19108880,
     "minSdk": 26,
-    "notes": "# Arc TV 2.5.1 for Android\n\n- **No more subtitle disclaimer.** The \"External subtitles are not sent to Cast or DLNA\" message is gone.\n- **The Experimental subtitles switch turns on at once.** A key you typed but did not save is saved for you; with no key the switch tells you so instead of springing back."
+    "notes": "# Arc TV 2.5.2 for Android\n\n- **No more \"English subtitles added\" message.** Picking a subtitle no longer puts a message over the picture. Screen readers still hear it."
   },
   "versions": [
+    {
+      "versionName": "2.5.2",
+      "versionCode": 25,
+      "date": "2026-10-19",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.2/arc-tv-android-2.5.2.apk",
+      "sha256": "2002978095199ddbfa617c8e982754953dd08479e5e062ae46c2c26457f45816",
+      "size": 19108880,
+      "minSdk": 26,
+      "notes": "# Arc TV 2.5.2 for Android\n\n- **No more \"English subtitles added\" message.** Picking a subtitle no longer puts a message over the picture. Screen readers still hear it."
+    },
     {
       "versionName": "2.5.1",
       "versionCode": 24,
