@@ -2,24 +2,42 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.3.1",
-    "date": "2026-10-16",
-    "notes": "# Arc TV 2.3.1 for Mac\n\n2.3.1 improves using Arc TV from a paired phone or a remote control.\n\n## What is new\n\n- **Clearer remote navigation.** Larger controls, steadier focus, clearer Back feedback and access to Home during playback make browsing easier from the sofa.\n- **Playback choices on your phone.** Choose subtitles, audio, playback speed and the sleep timer directly. Experimental English subtitle search is easier to use, including when a video has no built-in subtitles.\n- **Edit fields from your phone.** Enter settings and API keys through dedicated editors, with private values kept hidden.\n- **Companion file tools.** Upload a selected backup or subtitle file, download an exported backup to your phone, and choose Mac folders for downloads and sync through the paired connection. Files are limited to 64 MiB; including backup secrets still requires passphrase encryption.\n- **Better feedback.** Long subtitle names fit smaller phone screens, and playback errors offer a clear retry action.\n\n## Good to know\n\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- Android and iPhone apps remain on 2.0.2.\n- The Mac app is sealed with an ad-hoc signature and is not notari…",
+    "version": "2.5.0",
+    "date": "2026-10-19",
+    "notes": "# Arc TV 2.5.0 for Mac\n\n2.5.0 turns the phone remote into a full second screen and makes finding something to watch faster.\n\n## What is new\n\n- **A remote that matches the app.** The phone remote is rebuilt around a dial: volume, transport, grouped player actions, an episode picker and a position slider, with search and field editing that sit above the phone keyboard. Artwork colours follow what you are watching, and fall back to plain monochrome when the artwork cannot be read.\n- **TV mode, rebuilt for a big screen.** Press F10 or ask from the phone and Arc TV becomes a living-room app: a bare top bar, Home, Movies, Series, Live TV, Search, Favourites, Recent, Downloads and Settings all redrawn for a 1920 stage with TV-sized type. The focused card lights up in the artwork's own colour, the backdrop behind it warms to match, and nothing is boxed in a white outline. Exit TV mode is always one press away, and the last session is remembered.\n- **Up Next, on both screens.** The player shows the next episode with its code and title, series playback continues to it, and the phone can offer Continue or Play now without leaving the sofa.\n- **English subtitles when a video has none.** With S",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.3.1/arc-tv-2.3.1-mac-arm64.zip",
-        "sha256": "8088a98a27db11a3480bf7092bbbdce2b57b1d57b8b50d6c6db9efc79cbbffd6",
-        "size": 164516419
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.0/arc-tv-2.5.0-mac-arm64.zip",
+        "sha256": "7b54135fcf0f2d5c8afd8db222f62faa7e1b0e9cf70c0231b2f8cdf1511ed356",
+        "size": 164322261
       },
       "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.3.1/arc-tv-2.3.1-mac-x64.zip",
-        "sha256": "28b300b3926aed70f57e7e42f2c8d645aef3dfe1eeaa71f808772d4f2c6b1d45",
-        "size": 169350126
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.0/arc-tv-2.5.0-mac-x64.zip",
+        "sha256": "2c660b269c60020ea3f2ea99f3228cfcec1050cbaf20e19a42655efa50a3d440",
+        "size": 169183259
       }
     }
   },
   "versions": [
+    {
+      "version": "2.5.0",
+      "date": "2026-10-19",
+      "notes": "# Arc TV 2.5.0 for Mac\n\n2.5.0 turns the phone remote into a full second screen and makes finding something to watch faster.\n\n## What is new\n\n- **A remote that matches the app.** The phone remote is rebuilt around a dial: volume, transport, grouped player actions, an episode picker and a position slider, with search and field editing that sit above the phone keyboard. Artwork colours follow what you are watching, and fall back to plain monochrome when the artwork cannot be read.\n- **TV mode, rebuilt for a big screen.** Press F10 or ask from the phone and Arc TV becomes a living-room app: a bare top bar, Home, Movies, Series, Live TV, Search, Favourites, Recent, Downloads and Settings all redrawn for a 1920 stage with TV-sized type. The focused card lights up in the artwork's own colour, the backdrop behind it warms to match, and nothing is boxed in a white outline. Exit TV mode is always one press away, and the last session is remembered.\n- **Up Next, on both screens.** The player shows the next episode with its code and title, series playback continues to it, and the phone can offer Continue or Play now without leaving the sofa.\n- **English subtitles when a video has none.** With S",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.0/arc-tv-2.5.0-mac-arm64.zip",
+          "sha256": "7b54135fcf0f2d5c8afd8db222f62faa7e1b0e9cf70c0231b2f8cdf1511ed356",
+          "size": 164322261
+        },
+        "x64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.0/arc-tv-2.5.0-mac-x64.zip",
+          "sha256": "2c660b269c60020ea3f2ea99f3228cfcec1050cbaf20e19a42655efa50a3d440",
+          "size": 169183259
+        }
+      }
+    },
     {
       "version": "2.3.1",
       "date": "2026-10-16",
@@ -359,24 +377,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.6/arc-tv-1.4.6-mac-x64.zip",
           "sha256": "8d761367170b95216b3b0c96357a0ddd166dfae3e23f5b119c815d607469e99b",
           "size": 166800682
-        }
-      }
-    },
-    {
-      "version": "1.4.5",
-      "date": "2026-10-10",
-      "notes": "**A simpler, sleeker phone remote:** a glass dial with a progress ring around it, one control bar (Back, 10 seconds back and forward, Play/Pause, More), and a volume slider. Subtitles, audio, speed, the sleep timer, full screen, mute, next and previous episode, and search now live in a More menu that shows each setting's current value. On live TV the two seek keys become channel down and up.\n\n**Speed and sleep timer from the phone:** both can now be changed straight from the More menu, with no need to steer the player's own menus.\n\n**Ambient screen:** after 30 seconds idle during playback the phone dims to a true-black always-on style screen with a clock, the title and the position. A tap wakes it and dragging sideways seeks without waking it. The phone also stays awake while the remote is open. Scan the QR code again only if the remote shows \"not paired\".\n\n**Subtitles:** captions sit a little lower in the player, closer to the bottom edge.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.5/arc-tv-1.4.5-mac-arm64.zip",
-          "sha256": "9f67303b9991efce1a5dcdf0284dd69d52af5949ba118c2dd325ac20ab732346",
-          "size": 164674261
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.5/arc-tv-1.4.5-mac-x64.zip",
-          "sha256": "5c14240d43da7cb9d6e62a7ee7274212419326d3cc41ed840544b7c988aa5f2a",
-          "size": 166800500
         }
       }
     }
