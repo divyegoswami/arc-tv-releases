@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "2.5.1",
+          "buildVersion": "46",
+          "date": "2026-10-19",
+          "localizedDescription": "# Arc TV 2.5.1 for iPhone\n\n- **No more subtitle disclaimer.** The \"External subtitles are not sent to AirPlay\" message is gone.\n- **The Experimental subtitles switch turns on at once.** A key you typed but did not save is saved for you; with no key the switch tells you so instead of springing back.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.1/arc-tv-ios-2.5.1.ipa",
+          "size": 3342447,
+          "sha256": "bc810600e7100cd57218e6cbdafc66bcdb4b1e21ab9e38436acc86165753d926",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "2.5.0",
           "buildVersion": "45",
           "date": "2026-10-19",
@@ -114,11 +124,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "2.5.0",
+      "version": "2.5.1",
       "versionDate": "2026-10-19",
-      "versionDescription": "# Arc TV 2.5.0 for iPhone\n\n- **Up Next.** When an episode ends, Continue plays the next one, with its code and title on screen.\n- **Subtitles when a video has none.** With SubDL on, Arc TV can look for an English subtitle for you as you play\n  (the switch for it lives in Settings); you can also search for one and pick the release that fits. Cached\n  subtitles keep working after the update, and two seasons with the same name no longer share the wrong file.\n- **The right season, every time.** A series now opens on the season you were watching rather than the first.\n- **Back up and restore** your portals and settings from Settings.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.0/arc-tv-ios-2.5.0.ipa",
-      "size": 3342605
+      "versionDescription": "# Arc TV 2.5.1 for iPhone\n\n- **No more subtitle disclaimer.** The \"External subtitles are not sent to AirPlay\" message is gone.\n- **The Experimental subtitles switch turns on at once.** A key you typed but did not save is saved for you; with no key the switch tells you so instead of springing back.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.1/arc-tv-ios-2.5.1.ipa",
+      "size": 3342447
     }
   ],
   "news": []
