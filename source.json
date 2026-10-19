@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "2.5.2",
+          "buildVersion": "47",
+          "date": "2026-10-19",
+          "localizedDescription": "# Arc TV 2.5.2 for iPhone\n\n- **No more \"English subtitles added\" message.** Picking a subtitle no longer puts a message over the picture. VoiceOver still announces it.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.2/arc-tv-ios-2.5.2.ipa",
+          "size": 3341192,
+          "sha256": "f3494b6763c6b14297eaab5c22ac76c33b7feff923fab31b455c8d8ad8d38175",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "2.5.1",
           "buildVersion": "46",
           "date": "2026-10-19",
@@ -124,11 +134,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "2.5.1",
+      "version": "2.5.2",
       "versionDate": "2026-10-19",
-      "versionDescription": "# Arc TV 2.5.1 for iPhone\n\n- **No more subtitle disclaimer.** The \"External subtitles are not sent to AirPlay\" message is gone.\n- **The Experimental subtitles switch turns on at once.** A key you typed but did not save is saved for you; with no key the switch tells you so instead of springing back.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.1/arc-tv-ios-2.5.1.ipa",
-      "size": 3342447
+      "versionDescription": "# Arc TV 2.5.2 for iPhone\n\n- **No more \"English subtitles added\" message.** Picking a subtitle no longer puts a message over the picture. VoiceOver still announces it.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.2/arc-tv-ios-2.5.2.ipa",
+      "size": 3341192
     }
   ],
   "news": []
