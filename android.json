@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "2.5.0",
-    "versionCode": 23,
+    "versionName": "2.5.1",
+    "versionCode": 24,
     "date": "2026-10-19",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.0/arc-tv-android-2.5.0.apk",
-    "sha256": "f065525a39b1ff44d53a5633786259d2d3133aa82ccb79a8c3f538070e47e921",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.1/arc-tv-android-2.5.1.apk",
+    "sha256": "35e54604c8831a83eda62356f3429be328a594cc8153ce54e124acfdf02b1dbc",
     "size": 19108880,
     "minSdk": 26,
-    "notes": "# Arc TV 2.5.0 for Android\n\n- **Up Next.** Continue plays the next episode when one ends, with its code and title on screen.\n- **Subtitles when a video has none.** With SubDL on, Arc TV can look for an English subtitle for you as you play,\n  and the switch for that lives in Settings; you can also search for one yourself. Two seasons with the same name\n  no longer share the wrong cached file.\n- **Your SubDL key travels with your backup.** An encrypted backup now carries the SubDL key too, and restoring it never overwrites a key you already have unless you ask."
+    "notes": "# Arc TV 2.5.1 for Android\n\n- **No more subtitle disclaimer.** The \"External subtitles are not sent to Cast or DLNA\" message is gone.\n- **The Experimental subtitles switch turns on at once.** A key you typed but did not save is saved for you; with no key the switch tells you so instead of springing back."
   },
   "versions": [
+    {
+      "versionName": "2.5.1",
+      "versionCode": 24,
+      "date": "2026-10-19",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.1/arc-tv-android-2.5.1.apk",
+      "sha256": "35e54604c8831a83eda62356f3429be328a594cc8153ce54e124acfdf02b1dbc",
+      "size": 19108880,
+      "minSdk": 26,
+      "notes": "# Arc TV 2.5.1 for Android\n\n- **No more subtitle disclaimer.** The \"External subtitles are not sent to Cast or DLNA\" message is gone.\n- **The Experimental subtitles switch turns on at once.** A key you typed but did not save is saved for you; with no key the switch tells you so instead of springing back."
+    },
     {
       "versionName": "2.5.0",
       "versionCode": 23,
