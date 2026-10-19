@@ -20,6 +20,16 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "2.5.0",
+          "buildVersion": "45",
+          "date": "2026-10-19",
+          "localizedDescription": "# Arc TV 2.5.0 for iPhone\n\n- **Up Next.** When an episode ends, Continue plays the next one, with its code and title on screen.\n- **Subtitles when a video has none.** With SubDL on, Arc TV can look for an English subtitle for you as you play\n  (the switch for it lives in Settings); you can also search for one and pick the release that fits. Cached\n  subtitles keep working after the update, and two seasons with the same name no longer share the wrong file.\n- **The right season, every time.** A series now opens on the season you were watching rather than the first.\n- **Back up and restore** your portals and settings from Settings.",
+          "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.0/arc-tv-ios-2.5.0.ipa",
+          "size": 3342605,
+          "sha256": "a13cb9707f573be708c5b920136526f8d964fa5f14caa41762909d7d6e40ab06",
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "2.0.2",
           "buildVersion": "44",
           "date": "2026-10-15",
@@ -104,11 +114,11 @@
         "entitlements": [],
         "privacy": {}
       },
-      "version": "2.0.2",
-      "versionDate": "2026-10-15",
-      "versionDescription": "# Arc TV 2.0.2 (Android and iPhone)\n\n2.0.2 is a small update for the phones.\n\n## What is new\n\n- **Restoring a Mac backup tells you about radio favorites.** The phones cannot play radio yet, so those favorites are skipped. The summary now says how many were skipped instead of dropping them silently.\n- **Series match better when the season comes first.** Titles like \"2 сезон\" or \"2nd Season\" before or after the name are now understood, and non-English letters are kept when searching.\n- **Plainer words.** \"Source\" instead of \"portal\" in setup, and one spelling of \"favorites\" everywhere.\n\n## What did not change\n\n- Your sources, favorites, history, backups, downloads and settings are untouched.\n- The Mac app is on 2.2.8.",
-      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.0.2/arc-tv-ios-2.0.2.ipa",
-      "size": 3183591
+      "version": "2.5.0",
+      "versionDate": "2026-10-19",
+      "versionDescription": "# Arc TV 2.5.0 for iPhone\n\n- **Up Next.** When an episode ends, Continue plays the next one, with its code and title on screen.\n- **Subtitles when a video has none.** With SubDL on, Arc TV can look for an English subtitle for you as you play\n  (the switch for it lives in Settings); you can also search for one and pick the release that fits. Cached\n  subtitles keep working after the update, and two seasons with the same name no longer share the wrong file.\n- **The right season, every time.** A series now opens on the season you were watching rather than the first.\n- **Back up and restore** your portals and settings from Settings.",
+      "downloadURL": "https://github.com/divyegoswami/arc-tv-releases/releases/download/ios-2.5.0/arc-tv-ios-2.5.0.ipa",
+      "size": 3342605
     }
   ],
   "news": []
