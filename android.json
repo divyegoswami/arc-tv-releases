@@ -2,16 +2,26 @@
   "schemaVersion": 1,
   "packageName": "com.iptvnator.arc",
   "latest": {
-    "versionName": "2.0.2",
-    "versionCode": 22,
-    "date": "2026-10-15",
-    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.0.2/arc-tv-android-2.0.2.apk",
-    "sha256": "b0adfa96a1ec96fda4c7c44f825882cacff74c26cbcdbec09bfd427af258228b",
-    "size": 19043344,
+    "versionName": "2.5.0",
+    "versionCode": 23,
+    "date": "2026-10-19",
+    "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.0/arc-tv-android-2.5.0.apk",
+    "sha256": "f065525a39b1ff44d53a5633786259d2d3133aa82ccb79a8c3f538070e47e921",
+    "size": 19108880,
     "minSdk": 26,
-    "notes": "# Arc TV 2.0.2 (Android and iPhone)\n\n2.0.2 is a small update for the phones.\n\n## What is new\n\n- **Restoring a Mac backup tells you about radio favorites.** The phones cannot play radio yet, so those favorites are skipped. The summary now says how many were skipped instead of dropping them silently.\n- **Series match better when the season comes first.** Titles like \"2 сезон\" or \"2nd Season\" before or after the name are now understood, and non-English letters are kept when searching.\n- **Plainer words.** \"Source\" instead of \"portal\" in setup, and one spelling of \"favorites\" everywhere.\n\n## What did not change\n\n- Your sources, favorites, history, backups, downloads and settings are untouched.\n- The Mac app is on 2.2.8."
+    "notes": "# Arc TV 2.5.0 for Android\n\n- **Up Next.** Continue plays the next episode when one ends, with its code and title on screen.\n- **Subtitles when a video has none.** With SubDL on, Arc TV can look for an English subtitle for you as you play,\n  and the switch for that lives in Settings; you can also search for one yourself. Two seasons with the same name\n  no longer share the wrong cached file.\n- **Your SubDL key travels with your backup.** An encrypted backup now carries the SubDL key too, and restoring it never overwrites a key you already have unless you ask."
   },
   "versions": [
+    {
+      "versionName": "2.5.0",
+      "versionCode": 23,
+      "date": "2026-10-19",
+      "apkUrl": "https://github.com/divyegoswami/arc-tv-releases/releases/download/android-2.5.0/arc-tv-android-2.5.0.apk",
+      "sha256": "f065525a39b1ff44d53a5633786259d2d3133aa82ccb79a8c3f538070e47e921",
+      "size": 19108880,
+      "minSdk": 26,
+      "notes": "# Arc TV 2.5.0 for Android\n\n- **Up Next.** Continue plays the next episode when one ends, with its code and title on screen.\n- **Subtitles when a video has none.** With SubDL on, Arc TV can look for an English subtitle for you as you play,\n  and the switch for that lives in Settings; you can also search for one yourself. Two seasons with the same name\n  no longer share the wrong cached file.\n- **Your SubDL key travels with your backup.** An encrypted backup now carries the SubDL key too, and restoring it never overwrites a key you already have unless you ask."
+    },
     {
       "versionName": "2.0.2",
       "versionCode": 22,
