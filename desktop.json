@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.5.1",
+    "version": "2.5.2",
     "date": "2026-10-21",
-    "notes": "# Arc TV 2.5.1 for Mac\n\n2.5.1 makes TV mode work properly with a physical remote such as the G20S Pro BT, and adds a sleep timer to the TV player.\n\n## What is new\n\n- **A physical remote that just works.** OK, Back and Home now work in TV mode without turning anything on, and the remote can no longer switch itself off. Press once and it acts once; Play/Pause, Next and Previous each do one thing per press.\n- **Hold 0 to switch TV mode.** Hold 0 on the remote for about a second and a half to enter or leave TV mode, even while a video is playing. A quick tap does nothing, and it stays out of the way when you type.\n- **Sleep timer in the TV player.** Pause after 15, 30, 45 or 60 minutes, or at the end of the episode, from a small moon button in the player controls. It works on movies, episodes and live channels.\n- **Steadier navigation.** Up from the big tiles and poster rows now reaches the Home tab, the first Up from a live channel goes to its category, series Up/Down/Right move the way you expect, the Exit TV Mode button and the player's stream-info button are reachable, and Down on a detail page stays put.\n- **Seeking and volume.** Holding Left or Right keeps seeking without the co…",
+    "notes": "# Arc TV 2.5.2 for Mac\n\n2.5.2 fixes physical remote support on affected Macs and restores the app icon in small icon views.\n\n## What is new\n\n- **OK, Back and Home work on affected Macs.** The physical remote's buttons now work on Macs where the helper failed to start, for example a Mac mini with an Apple keyboard. The helper now listens only to the remote.\n- **A clear app icon at small sizes.** The Arc TV icon is no longer distorted in System Settings and other small icon views.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.1/arc-tv-2.5.1-mac-arm64.zip",
-        "sha256": "c9e7c470c8b33cf7fc754bebd1d364176fd5a279a07689b83cb2a92ac660e8a7",
-        "size": 164339581
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.1/arc-tv-2.5.1-mac-x64.zip",
-        "sha256": "9cfcaff66242162229f47799fef23446df6b7a55312babb7365f91b0a9112c63",
-        "size": 169205520
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.2/arc-tv-2.5.2-mac-arm64.zip",
+        "sha256": "1d499831eb5cfb96d4d4076d759d2c5a2f92f66f58c934c19299bd66d56cc8e3",
+        "size": 164566324
       }
     }
   },
   "versions": [
+    {
+      "version": "2.5.2",
+      "date": "2026-10-21",
+      "notes": "# Arc TV 2.5.2 for Mac\n\n2.5.2 fixes physical remote support on affected Macs and restores the app icon in small icon views.\n\n## What is new\n\n- **OK, Back and Home work on affected Macs.** The physical remote's buttons now work on Macs where the helper failed to start, for example a Mac mini with an Apple keyboard. The helper now listens only to the remote.\n- **A clear app icon at small sizes.** The Arc TV icon is no longer distorted in System Settings and other small icon views.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.2/arc-tv-2.5.2-mac-arm64.zip",
+          "sha256": "1d499831eb5cfb96d4d4076d759d2c5a2f92f66f58c934c19299bd66d56cc8e3",
+          "size": 164566324
+        }
+      }
+    },
     {
       "version": "2.5.1",
       "date": "2026-10-21",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-x64.zip",
           "sha256": "1806f2b56bc51193ca23f95a49337d692ed67dfa22ab87657c8181d9c91fa278",
           "size": 166808720
-        }
-      }
-    },
-    {
-      "version": "1.4.7",
-      "date": "2026-10-11",
-      "notes": "**Phone remote stays connected:** when your phone's screen times out, the remote now reconnects within seconds of waking, keeps its controls on screen under a \"Reconnecting to your Mac\" banner (with Retry now) instead of going blank, and retries commands such as Search. It also keeps the phone's screen on while you are using it (up to 10 minutes without a touch).\n\n**More reliable on the Mac:** a phone that goes to sleep no longer uses up the Mac's remote connections. The Mac now replaces the old connection when the same phone comes back, so it never refuses a returning phone.\n\n**Its own icon:** the remote has a black-and-white click-pad icon, so it no longer looks like the Arc TV app on your home screen. Delete the old shortcut and add it again to see it.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.7/arc-tv-1.4.7-mac-arm64.zip",
-          "sha256": "0408514da7a0f6d0b48870b86c68977aa51fbe3b610dea3fb745d234108395b3",
-          "size": 164682912
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.7/arc-tv-1.4.7-mac-x64.zip",
-          "sha256": "78726ba0264ba5550f3cf4bb51a20728d94c351c9acca34d7df447d416f327bf",
-          "size": 166809151
         }
       }
     }
