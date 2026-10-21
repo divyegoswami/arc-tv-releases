@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.5.0",
-    "date": "2026-10-19",
-    "notes": "# Arc TV 2.5.0 for Mac\n\n2.5.0 turns the phone remote into a full second screen and makes finding something to watch faster.\n\n## What is new\n\n- **A remote that matches the app.** The phone remote is rebuilt around a dial: volume, transport, grouped player actions, an episode picker and a position slider, with search and field editing that sit above the phone keyboard. Artwork colours follow what you are watching, and fall back to plain monochrome when the artwork cannot be read.\n- **TV mode, rebuilt for a big screen.** Press F10 or ask from the phone and Arc TV becomes a living-room app: a bare top bar, Home, Movies, Series, Live TV, Search, Favourites, Recent, Downloads and Settings all redrawn for a 1920 stage with TV-sized type. The focused card lights up in the artwork's own colour, the backdrop behind it warms to match, and nothing is boxed in a white outline. Exit TV mode is always one press away, and the last session is remembered.\n- **Up Next, on both screens.** The player shows the next episode with its code and title, series playback continues to it, and the phone can offer Continue or Play now without leaving the sofa.\n- **English subtitles when a video has none.** With S",
+    "version": "2.5.1",
+    "date": "2026-10-21",
+    "notes": "# Arc TV 2.5.1 for Mac\n\n2.5.1 makes TV mode work properly with a physical remote such as the G20S Pro BT, and adds a sleep timer to the TV player.\n\n## What is new\n\n- **A physical remote that just works.** OK, Back and Home now work in TV mode without turning anything on, and the remote can no longer switch itself off. Press once and it acts once; Play/Pause, Next and Previous each do one thing per press.\n- **Hold 0 to switch TV mode.** Hold 0 on the remote for about a second and a half to enter or leave TV mode, even while a video is playing. A quick tap does nothing, and it stays out of the way when you type.\n- **Sleep timer in the TV player.** Pause after 15, 30, 45 or 60 minutes, or at the end of the episode, from a small moon button in the player controls. It works on movies, episodes and live channels.\n- **Steadier navigation.** Up from the big tiles and poster rows now reaches the Home tab, the first Up from a live channel goes to its category, series Up/Down/Right move the way you expect, the Exit TV Mode button and the player's stream-info button are reachable, and Down on a detail page stays put.\n- **Seeking and volume.** Holding Left or Right keeps seeking without the co…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.0/arc-tv-2.5.0-mac-arm64.zip",
-        "sha256": "7b54135fcf0f2d5c8afd8db222f62faa7e1b0e9cf70c0231b2f8cdf1511ed356",
-        "size": 164322261
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.0/arc-tv-2.5.0-mac-x64.zip",
-        "sha256": "2c660b269c60020ea3f2ea99f3228cfcec1050cbaf20e19a42655efa50a3d440",
-        "size": 169183259
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.1/arc-tv-2.5.1-mac-arm64.zip",
+        "sha256": "c9e7c470c8b33cf7fc754bebd1d364176fd5a279a07689b83cb2a92ac660e8a7",
+        "size": 164339581
       }
     }
   },
   "versions": [
+    {
+      "version": "2.5.1",
+      "date": "2026-10-21",
+      "notes": "# Arc TV 2.5.1 for Mac\n\n2.5.1 makes TV mode work properly with a physical remote such as the G20S Pro BT, and adds a sleep timer to the TV player.\n\n## What is new\n\n- **A physical remote that just works.** OK, Back and Home now work in TV mode without turning anything on, and the remote can no longer switch itself off. Press once and it acts once; Play/Pause, Next and Previous each do one thing per press.\n- **Hold 0 to switch TV mode.** Hold 0 on the remote for about a second and a half to enter or leave TV mode, even while a video is playing. A quick tap does nothing, and it stays out of the way when you type.\n- **Sleep timer in the TV player.** Pause after 15, 30, 45 or 60 minutes, or at the end of the episode, from a small moon button in the player controls. It works on movies, episodes and live channels.\n- **Steadier navigation.** Up from the big tiles and poster rows now reaches the Home tab, the first Up from a live channel goes to its category, series Up/Down/Right move the way you expect, the Exit TV Mode button and the player's stream-info button are reachable, and Down on a detail page stays put.\n- **Seeking and volume.** Holding Left or Right keeps seeking without the co…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.1/arc-tv-2.5.1-mac-arm64.zip",
+          "sha256": "c9e7c470c8b33cf7fc754bebd1d364176fd5a279a07689b83cb2a92ac660e8a7",
+          "size": 164339581
+        }
+      }
+    },
     {
       "version": "2.5.0",
       "date": "2026-10-19",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.7/arc-tv-1.4.7-mac-x64.zip",
           "sha256": "78726ba0264ba5550f3cf4bb51a20728d94c351c9acca34d7df447d416f327bf",
           "size": 166809151
-        }
-      }
-    },
-    {
-      "version": "1.4.6",
-      "date": "2026-10-10",
-      "notes": "**Phone remote fixes:** Episodes now opens the player's episode list in full screen. Use the dial to move between episodes, OK to play one, and Back to close the list before leaving full screen. The More menu gains an Episodes tile whenever there is an episode list.\n\n**Simpler More menu:** the Controls tile is gone, because the dial already reaches the player's own controls. The Play, Episodes and Trailer shortcuts now show only while nothing is playing.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.6/arc-tv-1.4.6-mac-arm64.zip",
-          "sha256": "3ef294bb56c260381b283c86bec05fb3883ff70425dc6154ee034aa549a0af32",
-          "size": 164674443
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.6/arc-tv-1.4.6-mac-x64.zip",
-          "sha256": "8d761367170b95216b3b0c96357a0ddd166dfae3e23f5b119c815d607469e99b",
-          "size": 166800682
         }
       }
     }
