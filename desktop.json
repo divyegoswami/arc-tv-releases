@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.5.2",
-    "date": "2026-10-21",
-    "notes": "# Arc TV 2.5.2 for Mac\n\n2.5.2 fixes physical remote support on affected Macs and restores the app icon in small icon views.\n\n## What is new\n\n- **OK, Back and Home work on affected Macs.** The physical remote's buttons now work on Macs where the helper failed to start, for example a Mac mini with an Apple keyboard. The helper now listens only to the remote.\n- **A clear app icon at small sizes.** The Arc TV icon is no longer distorted in System Settings and other small icon views.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
+    "version": "2.5.3",
+    "date": "2026-10-25",
+    "notes": "# Arc TV 2.5.3 for Mac\n\n2.5.3 makes the Movies and Series tiles in TV mode match Desktop mode.\n\n## What is new\n\n- **Series belong under Series.** Sources that list shows inside Movies now show those titles under the Series tile in TV mode. Their series categories appear there too, and selecting a show opens its seasons and episodes.\n- **Reliable browsing.** Switching categories while titles load keeps the correct results, and shows from different provider sections remain separate even when their IDs match.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.2/arc-tv-2.5.2-mac-arm64.zip",
-        "sha256": "1d499831eb5cfb96d4d4076d759d2c5a2f92f66f58c934c19299bd66d56cc8e3",
-        "size": 164566324
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.2/arc-tv-2.5.2-mac-x64.zip",
-        "sha256": "d292f1435013d56f70e6b5e011471b3c8b1a2dc45829c090ad58fcdc505be2a8",
-        "size": 169400367
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.3/arc-tv-2.5.3-mac-arm64.zip",
+        "sha256": "c86165032d608549b55f36c80643d0cd721fd447a53693f5b7ce07c84368f619",
+        "size": 164563267
       }
     }
   },
   "versions": [
+    {
+      "version": "2.5.3",
+      "date": "2026-10-25",
+      "notes": "# Arc TV 2.5.3 for Mac\n\n2.5.3 makes the Movies and Series tiles in TV mode match Desktop mode.\n\n## What is new\n\n- **Series belong under Series.** Sources that list shows inside Movies now show those titles under the Series tile in TV mode. Their series categories appear there too, and selecting a show opens its seasons and episodes.\n- **Reliable browsing.** Switching categories while titles load keeps the correct results, and shows from different provider sections remain separate even when their IDs match.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.3/arc-tv-2.5.3-mac-arm64.zip",
+          "sha256": "c86165032d608549b55f36c80643d0cd721fd447a53693f5b7ce07c84368f619",
+          "size": 164563267
+        }
+      }
+    },
     {
       "version": "2.5.2",
       "date": "2026-10-21",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-x64.zip",
           "sha256": "7165c22d3cd086f04bab2fc0fa47c6eddb2ade4d3f82d8f3aee6ce70b910e6f0",
           "size": 167081847
-        }
-      }
-    },
-    {
-      "version": "1.4.8",
-      "date": "2026-10-11",
-      "notes": "The phone remote's More menu works again: Search, Speed, Sleep timer, Full screen, Subtitles and the other tiles now respond to taps while a title is playing. After updating, reload the remote shortcut on your phone once.",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-arm64.zip",
-          "sha256": "ec15a7c742579a20e3a14d1f6816f38935827966f748ef95a3da65e0b812dd14",
-          "size": 164682481
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v1.4.8/arc-tv-1.4.8-mac-x64.zip",
-          "sha256": "1806f2b56bc51193ca23f95a49337d692ed67dfa22ab87657c8181d9c91fa278",
-          "size": 166808720
         }
       }
     }
