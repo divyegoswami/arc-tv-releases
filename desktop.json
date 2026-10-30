@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.5.3",
-    "date": "2026-10-25",
-    "notes": "# Arc TV 2.5.3 for Mac\n\n2.5.3 makes the Movies and Series tiles in TV mode match Desktop mode.\n\n## What is new\n\n- **Series belong under Series.** Sources that list shows inside Movies now show those titles under the Series tile in TV mode. Their series categories appear there too, and selecting a show opens its seasons and episodes.\n- **Reliable browsing.** Switching categories while titles load keeps the correct results, and shows from different provider sections remain separate even when their IDs match.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
+    "version": "2.5.4",
+    "date": "2026-10-30",
+    "notes": "# Arc TV 2.5.4 for Mac\n\n2.5.4 makes Arc TV feel quick right after launch on large libraries.\n\n## What is new\n\n- **No more sluggish start.** Before, the app could stay slow for about a minute after launch if your library was large. Home now reads your matched titles far faster, so the rest of the app is no longer stuck waiting behind it.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.3/arc-tv-2.5.3-mac-arm64.zip",
-        "sha256": "c86165032d608549b55f36c80643d0cd721fd447a53693f5b7ce07c84368f619",
-        "size": 164563267
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.3/arc-tv-2.5.3-mac-x64.zip",
-        "sha256": "da2caa120b44676dd1894e8108b60eaeff0e5eea2c2803632413cbbd6eede0bc",
-        "size": 169397833
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.4/arc-tv-2.5.4-mac-arm64.zip",
+        "sha256": "f57895e980c07a127d3e82d60b73efe4f72aa6e00a302ecbebce179896885034",
+        "size": 164881085
       }
     }
   },
   "versions": [
+    {
+      "version": "2.5.4",
+      "date": "2026-10-30",
+      "notes": "# Arc TV 2.5.4 for Mac\n\n2.5.4 makes Arc TV feel quick right after launch on large libraries.\n\n## What is new\n\n- **No more sluggish start.** Before, the app could stay slow for about a minute after launch if your library was large. Home now reads your matched titles far faster, so the rest of the app is no longer stuck waiting behind it.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through a small helper that needs **Input Monitoring** in macOS Privacy & Security. Arc TV asks the first time you enter TV mode.",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.5.4/arc-tv-2.5.4-mac-arm64.zip",
+          "sha256": "f57895e980c07a127d3e82d60b73efe4f72aa6e00a302ecbebce179896885034",
+          "size": 164881085
+        }
+      }
+    },
     {
       "version": "2.5.3",
       "date": "2026-10-25",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.1/arc-tv-2.0.1-mac-x64.zip",
           "sha256": "288dde05967f4273934968693a7c8d601b289491208eece16dc69c4c1edfd142",
           "size": 168714886
-        }
-      }
-    },
-    {
-      "version": "2.0.0",
-      "date": "2026-10-13",
-      "notes": "## What's new in Arc TV 2.0\n\nArc TV 2.0 helps you find something to watch, and makes your data safe to move. The Mac app gains a Browse page by\ngenre, an optional library index, better suggestions, stronger backups and an optional sync folder. Android and iPhone\ngain Browse by genre with the optional library index, Up Next, a sleep timer, a channel schedule, an adult-content PIN, the same new backup file as the Mac and an optional sync folder. Android and iPhone are in early access, and the Mac is the main app.\n\nArc TV is a player, not a TV service. It includes no channels, movies or playlists. Your portals, history and settings\nstay on your devices. TMDB, the library index and sync are off until you switch them on.\n\n## Mac\n\n- **Browse by genre.** Open Browse in the sidebar, pick a source, choose Movies or Series, and filter by genre, decade,\n  rating and language. Sort by top rated, newest, title or recently added. It lists matched titles that have details in\n  your library index.\n- **Library index (optional).** Genres, year, rating and runtime for your matched titles, fetched with your own TMDB key\n  and kept only on this Mac. It runs slowly, only while the app is idle, and you…",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-arm64.zip",
-          "sha256": "73424a4d2b159d96f29630531794047481efff00751db31d6b81ec6f01004bc0",
-          "size": 164955608
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.0/arc-tv-2.0.0-mac-x64.zip",
-          "sha256": "7165c22d3cd086f04bab2fc0fa47c6eddb2ade4d3f82d8f3aee6ce70b910e6f0",
-          "size": 167081847
         }
       }
     }
