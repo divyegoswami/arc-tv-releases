@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.6.0",
-    "date": "2026-10-30",
-    "notes": "# Arc TV 2.6.0 for Mac\n\n2.6.0 is a design and polish release: finding things is more forgiving, Home and TV mode feel more like one app, and many small rough edges are gone.\n\n## What is new\n\n- **Search that forgives.** Typos and different spellings now find the title, for example \"dhurandar\" finds Dhurandhar. The closest matches come first.\n- **One card per title.** Copies of the same film or show (4K, HD, a dubbed language, CAM) share one card with \"N versions\", and you pick the copy on its page. \"Top rated\" is no longer led by cinema-camera copies.\n- **Wrong poster or plot?** Movie and series pages have a \"Wrong title? Fix match\" link, and the page updates as soon as you choose. Titles such as \"IPL 2026\" no longer pick up an unrelated show.\n- **Live TV guide that shows programmes**, even on portals whose full guide comes back empty. Press R to swap back to the channel you watched before.\n- **A Home that is never empty.** A new source fills Home with its newest movies and series until you have watched something. Continue Watching resumes the episode when you click it. My List and Favorites are now one place.\n- **TV mode matches Home.** TV Home shows the same rows as the desktop a…",
+    "version": "2.6.1",
+    "date": "2026-10-31",
+    "notes": "# Arc TV 2.6.1 for Mac\n\n2.6.1 makes Arc TV calmer when the portal is busy, and skips ads in trailers.\n\n## What is new\n\n- **No more error at launch.** Before, a portal that was busy or refused a request could show a red `Error invoking remote method` message as soon as the app opened. Now the guide and other background reads fail quietly and try again a few minutes later, so the app stays quiet.\n- **Plain words when you ask and it fails.** If the portal refuses something you asked for, you see \"The portal refused the request. Wait a few minutes and try again.\" with a Retry button.\n- **Gentler on your portal.** The guide asks for programmes one at a time instead of all at once, and stops asking for a few minutes if the portal says no. On a portal with no full guide, the Live guide rows fill in one by one.\n- **Trailers without ads.** YouTube trailers skip their ads and go straight to the trailer.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Secur…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.0/arc-tv-2.6.0-mac-arm64.zip",
-        "sha256": "9edfdde6398b5ecddce7f320c9d1f6c70e81917c3040dffb5fc9c43e4bdeb39e",
-        "size": 164944363
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.0/arc-tv-2.6.0-mac-x64.zip",
-        "sha256": "8935e9db2af78c136ef8ff1be092b1df2a3e6807552b787c965f2ff1bf4eedd0",
-        "size": 169778927
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.1/arc-tv-2.6.1-mac-arm64.zip",
+        "sha256": "50aa4a9b6ee439d2dea1e9680b343bf2aaa1d25e2316b73b7d5001b529357249",
+        "size": 164956186
       }
     }
   },
   "versions": [
+    {
+      "version": "2.6.1",
+      "date": "2026-10-31",
+      "notes": "# Arc TV 2.6.1 for Mac\n\n2.6.1 makes Arc TV calmer when the portal is busy, and skips ads in trailers.\n\n## What is new\n\n- **No more error at launch.** Before, a portal that was busy or refused a request could show a red `Error invoking remote method` message as soon as the app opened. Now the guide and other background reads fail quietly and try again a few minutes later, so the app stays quiet.\n- **Plain words when you ask and it fails.** If the portal refuses something you asked for, you see \"The portal refused the request. Wait a few minutes and try again.\" with a Retry button.\n- **Gentler on your portal.** The guide asks for programmes one at a time instead of all at once, and stops asking for a few minutes if the portal says no. On a portal with no full guide, the Live guide rows fill in one by one.\n- **Trailers without ads.** YouTube trailers skip their ads and go straight to the trailer.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Secur…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.1/arc-tv-2.6.1-mac-arm64.zip",
+          "sha256": "50aa4a9b6ee439d2dea1e9680b343bf2aaa1d25e2316b73b7d5001b529357249",
+          "size": 164956186
+        }
+      }
+    },
     {
       "version": "2.6.0",
       "date": "2026-10-30",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-x64.zip",
           "sha256": "08ff9dc710001f952deabbae6d2b5b293457de7c916d9e67312ffe2980759f66",
           "size": 170759786
-        }
-      }
-    },
-    {
-      "version": "2.0.2",
-      "date": "2026-10-13",
-      "notes": "# Arc TV 2.0.2 for Mac\n\n2.0.2 lets a backup carry your catalogue index, so a second Mac does not have to walk your portal again.\n\n## What is new\n\n- **Include the catalogue index in a backup.** When you export, tick **Include the catalogue index**. It adds your portal's title list: names, categories, years and the portal's own ratings. When another Mac restores the file, it skips the hours-long catalogue walk, and the match decisions in the backup apply to those titles straight away.\n- **No TMDB data in the file.** The catalogue index holds only what your portal itself reports. TMDB details are fetched again on the new Mac with its own key, so nothing from TMDB is copied between devices.\n- **Off by default.** A large portal can add tens of megabytes to the file, so nothing is added unless you tick the box. It works with or without a passphrase.\n- **Clear feedback on restore.** The restore screen lists the catalogue index with the other contents, and the result says how many titles were restored.\n\n## What did not change\n\n- Existing backups restore exactly as before, and the phones simply ignore the new section.\n- Your data and settings are untouched.\n- Pick the **arm64** download on…",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.2/arc-tv-2.0.2-mac-arm64.zip",
-          "sha256": "7260a28a5fa89eb0a1748da41ea28988ef0117ece08389cd3f65ed63a5ef3177",
-          "size": 163886222
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.0.2/arc-tv-2.0.2-mac-x64.zip",
-          "sha256": "0379e17ffecc05574d13a976bf38a0f9925b496aed790f241f5db29fb97da53b",
-          "size": 168719925
         }
       }
     }
