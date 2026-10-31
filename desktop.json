@@ -2,24 +2,32 @@
   "schemaVersion": 1,
   "appId": "com.fourgray.iptvnator",
   "latest": {
-    "version": "2.6.1",
+    "version": "2.6.2",
     "date": "2026-10-31",
-    "notes": "# Arc TV 2.6.1 for Mac\n\n2.6.1 makes Arc TV calmer when the portal is busy, and skips ads in trailers.\n\n## What is new\n\n- **No more error at launch.** Before, a portal that was busy or refused a request could show a red `Error invoking remote method` message as soon as the app opened. Now the guide and other background reads fail quietly and try again a few minutes later, so the app stays quiet.\n- **Plain words when you ask and it fails.** If the portal refuses something you asked for, you see \"The portal refused the request. Wait a few minutes and try again.\" with a Retry button.\n- **Gentler on your portal.** The guide asks for programmes one at a time instead of all at once, and stops asking for a few minutes if the portal says no. On a portal with no full guide, the Live guide rows fill in one by one.\n- **Trailers without ads.** YouTube trailers skip their ads and go straight to the trailer.\n\n## Good to know\n\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Secur…",
+    "notes": "# Arc TV 2.6.2 for Mac\n\n2.6.2 brings back the way the physical TV remote worked before 2.6.0.\n\n## What is new\n\n- **The remote feels as it did before.** Resting on a top-bar tab no longer opens it or pulls you into the page, so the dial can walk the tabs again; press OK to open one. Back no longer ends up on the wrong page after switching tabs.\n- **Leaving fullscreen keeps the movie playing.** Before, leaving fullscreen with the bar hidden could close the player and stop the movie. Back now takes one step at a time: menus, the bar, the Up Next card, fullscreen, then the player.\n- **No surprise big picture on Home.** The hero at the top only appears when you have a Continue Watching card, and no longer jumps under the dial.\n\n## Good to know\n\n- From a fullscreen movie, Back can take up to 4 presses to leave the player, one step each.\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through…",
     "minOS": "12.0",
     "assets": {
       "arm64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.1/arc-tv-2.6.1-mac-arm64.zip",
-        "sha256": "50aa4a9b6ee439d2dea1e9680b343bf2aaa1d25e2316b73b7d5001b529357249",
-        "size": 164956186
-      },
-      "x64": {
-        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.1/arc-tv-2.6.1-mac-x64.zip",
-        "sha256": "644a026daf6885c7429f61df22052c8e572407e4eadf82978038dabe16b73982",
-        "size": 169790768
+        "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.2/arc-tv-2.6.2-mac-arm64.zip",
+        "sha256": "9bd03442191aca2d897e183642870a0ec40555e535ecd7c7e93f2bfe4c1bb5f9",
+        "size": 164955466
       }
     }
   },
   "versions": [
+    {
+      "version": "2.6.2",
+      "date": "2026-10-31",
+      "notes": "# Arc TV 2.6.2 for Mac\n\n2.6.2 brings back the way the physical TV remote worked before 2.6.0.\n\n## What is new\n\n- **The remote feels as it did before.** Resting on a top-bar tab no longer opens it or pulls you into the page, so the dial can walk the tabs again; press OK to open one. Back no longer ends up on the wrong page after switching tabs.\n- **Leaving fullscreen keeps the movie playing.** Before, leaving fullscreen with the bar hidden could close the player and stop the movie. Back now takes one step at a time: menus, the bar, the Up Next card, fullscreen, then the player.\n- **No surprise big picture on Home.** The hero at the top only appears when you have a Continue Watching card, and no longer jumps under the dial.\n\n## Good to know\n\n- From a fullscreen movie, Back can take up to 4 presses to leave the player, one step each.\n- This is a Mac release. The phone apps are unchanged.\n- Pick **arm64** for an M-series Mac or **x64** for an Intel Mac.\n- The Mac app is sealed with an ad-hoc signature and is not notarized by Apple. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**.\n- The remote's OK, Back and Home buttons reach Arc TV through…",
+      "minOS": "12.0",
+      "assets": {
+        "arm64": {
+          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.6.2/arc-tv-2.6.2-mac-arm64.zip",
+          "sha256": "9bd03442191aca2d897e183642870a0ec40555e535ecd7c7e93f2bfe4c1bb5f9",
+          "size": 164955466
+        }
+      }
+    },
     {
       "version": "2.6.1",
       "date": "2026-10-31",
@@ -359,24 +367,6 @@
           "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.2.0/arc-tv-2.2.0-mac-x64.zip",
           "sha256": "a2f2b2e762e699b40eecc21aa9aa1841ad4a66cdc400850d88758e816cbbb285",
           "size": 170760696
-        }
-      }
-    },
-    {
-      "version": "2.1.0",
-      "date": "2026-10-13",
-      "notes": "# Arc TV 2.1.0 for Mac\n\n2.1.0 makes the Mac app simpler: one button builds your library, and Settings is cleaner.\n\n## What is new\n\n- **One button builds your library.** In **Settings → Library**, **Build my library** reads your source's titles and matches them on TMDB, then keeps going on its own. You see one progress line, with Pause, Stop and Delete. It asks for your OK once, in plain words. If TMDB is off, Arc TV tells you what to do in one line. After you restore a backup, Arc TV offers the same button, so Home can look like it does on your other Mac.\n- **Six calmer Settings pages.** General, Playback, Library, Home, Data and About. Remote Control now sits in General, TV Guide in Library, and Backup, Sync and Reset together in Data. Each row has a short name and one short line of help. Rarely used options are under one **Advanced** section per page.\n- **No licence screen in the app.** Licences and credits now live in the README, under \"Legal and credits\". The app still carries the MIT licence file inside it, and shows one small TMDB credit line, as TMDB requires.\n\n## What did not change\n\n- Your sources, favourites, history, backups and Settings values are untouched. Old Settin…",
-      "minOS": "12.0",
-      "assets": {
-        "arm64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-arm64.zip",
-          "sha256": "cc4f6ba794bcbf60f3841494787fec7eb9ec2b15a9ee5b5114fe30a5f600906f",
-          "size": 165926078
-        },
-        "x64": {
-          "url": "https://github.com/divyegoswami/arc-tv-releases/releases/download/v2.1.0/arc-tv-2.1.0-mac-x64.zip",
-          "sha256": "08ff9dc710001f952deabbae6d2b5b293457de7c916d9e67312ffe2980759f66",
-          "size": 170759786
         }
       }
     }
